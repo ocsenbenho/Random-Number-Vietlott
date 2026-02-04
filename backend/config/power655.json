@@ -1,0 +1,8 @@
+{
+    "name": "Power 6/55",
+    "type": "matrix",
+    "min": 1,
+    "max": 55,
+    "size": 6,
+    "allowDuplicate": false
+}

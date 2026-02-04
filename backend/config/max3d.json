@@ -1,0 +1,8 @@
+{
+    "name": "Max 3D",
+    "type": "digit",
+    "min": 0,
+    "max": 9,
+    "size": 3,
+    "allowDuplicate": true
+}

@@ -1,0 +1,950 @@
+Running manual crawl...
+Connected to SQLite database
+[32mINFO[39m [33m PlaywrightCrawler:[39m Starting the crawler.
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xo-so-dien-toan-mega-645.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xo-so-dien-toan-power-655.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing keno from https://minhchinh.com/xo-so-dien-toan-keno.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xo-so-dien-toan-max-3d.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/loto-535.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-03-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 15 candidates for keno
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-03-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-02-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-02-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-01-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for max3d
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:Statistics:[39m PlaywrightCrawler request statistics:[90m {"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":13081,"requestsFinishedPerMinute":12,"requestsFailedPerMinute":0,"requestTotalDurationMillis":156967,"requestsTotal":12,"crawlerRuntimeMillis":60348,"retryHistogram":[12]}[39m
+[32mINFO[39m [33m PlaywrightCrawler:AutoscaledPool:[39m state[90m {"currentConcurrency":5,"desiredConcurrency":6,"systemStatus":{"isSystemIdle":true,"memInfo":{"isOverloaded":false,"limitRatio":0.2,"actualRatio":0},"eventLoopInfo":{"isOverloaded":false,"limitRatio":0.6,"actualRatio":0.101},"cpuInfo":{"isOverloaded":false,"limitRatio":0.4,"actualRatio":0},"clientInfo":{"isOverloaded":false,"limitRatio":0.3,"actualRatio":0}}}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-01-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-31-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-31-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-29-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-29-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-27-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-27-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-26-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-25-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-26-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-25-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-24-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-24-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-22-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-22-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-19-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-20-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-19-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-18-01-2026.html
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-18-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-17-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-17-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-15-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-15-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-13-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-10-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-09-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-11-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-10-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-12-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-11-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-12-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-13-01-2026.html
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing power655: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing mega645: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing max3d: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing mega645: page.waitForTimeout: Target page, context or browser has been closed
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: Target page, context or browser has been closed
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"efOsB8DZWnx6e4x","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. browserController.newPage() failed: Lz_J2wisJfdhKqn-dDFe1
+Cause:browserContext.newPage: Target page, context or browser has been closed.
+[90m {"id":"NR8DbzYngnjBhZ1","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"IQoHxDVsWp0h7Wj","url":"https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"y6HTv9fsn987BVc","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-07-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-07-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"OTnt2GpWY7oIWwD","url":"https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-07-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-07-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-07-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"gHUFNk2EpytElZJ","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-07-01-2026.html","retryCount":1}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-04-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-03-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-05-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-04-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-06-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-06-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-05-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-07-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-03-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-02-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-02-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-01-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-02-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-01-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-31-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-31-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-30-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-31-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-30-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-29-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-28-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-29-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-27-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-28-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-26-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-26-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-27-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-26-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-07-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-07-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-25-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"Pqmhem1hZsVDHHN","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-24-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"RYXgKDJAPAale6s","url":"https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-24-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"8pLXZMqzFXYSnAZ","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-25-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"f20qk5ec4fbh8xa","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-24-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"GXYogpTWn4eosjn","url":"https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-21-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"pJfNFrrHoN3zTW5","url":"https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-23-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"VM184HUieNE8cBY","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-23-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. Request blocked - received 403 status code.
+[90m {"id":"GV4AFyN6BQ1ps9X","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-22-12-2025.html","retryCount":1}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-22-12-2025.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-22-12-2025.html", waiting until "load"[22m
+
+[90m {"id":"x3Fd3ElSPs2TjPw","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-22-12-2025.html","retryCount":1}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-12-2025.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-12-2025.html", waiting until "load"[22m
+
+[90m {"id":"Vmgi8MTPQotXQKk","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-12-2025.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-12-2025.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-12-2025.html", waiting until "load"[22m
+
+[90m {"id":"6RYpNfHOXugFfKA","url":"https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-12-2025.html","retryCount":1}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-19-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-19-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-20-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-24-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-17-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-25-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-18-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-24-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-18-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-19-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-24-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:Statistics:[39m PlaywrightCrawler request statistics:[90m {"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":5534,"requestsFinishedPerMinute":50,"requestsFailedPerMinute":0,"requestTotalDurationMillis":553377,"requestsTotal":100,"crawlerRuntimeMillis":120440,"retryHistogram":[99,1]}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:AutoscaledPool:[39m state[90m {"currentConcurrency":11,"desiredConcurrency":12,"systemStatus":{"isSystemIdle":true,"memInfo":{"isOverloaded":false,"limitRatio":0.2,"actualRatio":0},"eventLoopInfo":{"isOverloaded":false,"limitRatio":0.6,"actualRatio":0.112},"cpuInfo":{"isOverloaded":false,"limitRatio":0.4,"actualRatio":0},"clientInfo":{"isOverloaded":false,"limitRatio":0.3,"actualRatio":0}}}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-23-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-22-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-23-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-17-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-21-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-22-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-16-12-2025.html
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-16-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-17-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-15-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-15-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-14-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-14-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-12-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-10-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-13-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-12-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-11-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-12-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-13-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-08-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-11-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-09-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-10-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-10-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-07-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-07-12-2025.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[31mERROR[39m[33m PlaywrightCrawler:[39m Error processing loto535: page.evaluate: ReferenceError: log is not defined
+    at eval (eval at evaluate (:290:30), <anonymous>:90:41)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m All requests from the queue have been processed, the crawler will shut down.
+[32mINFO[39m [33m PlaywrightCrawler:[39m Final request statistics:[90m {"requestsFinished":142,"requestsFailed":0,"retryHistogram":[130,12],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":6743,"requestsFinishedPerMinute":54,"requestsFailedPerMinute":0,"requestTotalDurationMillis":957551,"requestsTotal":142,"crawlerRuntimeMillis":159231}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Finished! Total 142 requests: 142 succeeded, 0 failed.[90m {"terminal":true}[39m
+Crawl Result: {
+  processed: 77,
+  newItems: 1,
+  errors: [
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing power655: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing mega645: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing max3d: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing mega645: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing loto535: page.waitForTimeout: Target page, context or browser has been closed',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)',
+    'Error processing loto535: page.evaluate: ReferenceError: log is not defined\n' +
+      '    at eval (eval at evaluate (:290:30), <anonymous>:90:41)\n' +
+      '    at UtilityScript.evaluate (<anonymous>:292:16)\n' +
+      '    at UtilityScript.<anonymous> (<anonymous>:1:44)'
+  ]
+}
+DB Loto 5/35 Rows: 0
+[]

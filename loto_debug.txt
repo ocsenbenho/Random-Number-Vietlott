@@ -1,0 +1,1236 @@
+Found 14 boxes.
+
+=== Box 1 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #440 ngày 03/02/2026 - Lúc 21:00
+05
+10
+11
+28
+29
+05
+Giá trị Độc Đắc
+6,530,512,500
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	0	6,530,512,500
+Giải nhất	
+	0	10,000,000
+Giải nhì	
+	3	5,000,000
+Giải ba	
+	77	500,000
+Giải tư	
+	207	100,000
+Giải năm	
+	2,273	30,000
+Giải kk	
+	13,891	10,000
+Lưu Ý:
+(*) Giá trị cơ bản các hạng giải thưởng khi chưa có “Chia giải Độc Đắc”.
+(**) Phần chia giải độc đắc phụ thuộc vào giá trị của Độc Đắc và số lượng khách hàng trúng thưởng các hạng giải tương ứng.
+Thống kê tần suất xuất hiện
+Thống kê Jackpot
+Biểu đồ kết quả
+Dò kết quả
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-03-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 03/02/2026 - Lúc 21:00">#440</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-03-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 03/02/2026 - Lúc 21:00">03/02/2026</a> - Lúc 21:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">05</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">10</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">11</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">28</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">29</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">05</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,530,512,500</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>6,530,512,500</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>3</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">77</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>207</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>2,273</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>13,891</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="note">
+					<div><b>Lưu Ý:</b></div>
+					<div>(*) Giá trị cơ bản các hạng giải thưởng khi chưa có “Chia giải Độc Đắc”.</div>
+					<div>(**) Phần chia giải độc đắc phụ thuộc vào giá trị của Độc Đắc và số lượng khách hàng trúng thưởng các hạng giải tương ứng.</div>
+				</div>
+				<div class="congdon"></div><ul class="link-statistic">
+					<li><a href="/thong-ke-.html">Thống kê tần suất xuất hiện</a></li>
+					<li><a href="/thong-ke-tan-suat-.html">Thống kê Jackpot</a></li>
+					<li><a href="/bieu-do-xs-.html">Biểu đồ kết quả</a></li>
+					<li><a href="/do-ve-so-.html">Dò kết quả</a></li>
+				</ul>
+		</div>
+	</center>
+
+
+=== Box 2 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #439 ngày 03/02/2026 - Lúc 13:00
+19
+23
+24
+32
+33
+10
+Giá trị Độc Đắc
+6,364,770,000
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	0	6,364,770,000
+Giải nhất	
+	1	10,000,000
+Giải nhì	
+	1	5,000,000
+Giải ba	
+	60	500,000
+Giải tư	
+	187	100,000
+Giải năm	
+	1,712	30,000
+Giải kk	
+	11,052	10,000
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-03-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 03/02/2026 - Lúc 13:00">#439</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-03-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 03/02/2026 - Lúc 13:00">03/02/2026</a> - Lúc 13:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">19</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">23</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">24</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">32</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">33</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">10</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,364,770,000</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>6,364,770,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">60</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>187</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1,712</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>11,052</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</center>
+
+
+=== Box 3 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #438 ngày 02/02/2026 - Lúc 21:00
+01
+03
+05
+06
+11
+05
+Giá trị Độc Đắc
+6,269,520,000
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	0	6,269,520,000
+Giải nhất	
+	2	10,000,000
+Giải nhì	
+	5	5,000,000
+Giải ba	
+	84	500,000
+Giải tư	
+	186	100,000
+Giải năm	
+	2,303	30,000
+Giải kk	
+	17,469	10,000
+Lưu Ý:
+(*) Giá trị cơ bản các hạng giải thưởng khi chưa có “Chia giải Độc Đắc”.
+(**) Phần chia giải độc đắc phụ thuộc vào giá trị của Độc Đắc và số lượng khách hàng trúng thưởng các hạng giải tương ứng.
+Thống kê tần suất xuất hiện
+Thống kê Jackpot
+Biểu đồ kết quả
+Dò kết quả
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-02-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 02/02/2026 - Lúc 21:00">#438</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-02-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 02/02/2026 - Lúc 21:00">02/02/2026</a> - Lúc 21:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">01</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">03</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">05</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">06</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">11</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">05</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,269,520,000</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>6,269,520,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>2</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>5</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">84</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>186</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>2,303</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>17,469</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="note">
+					<div><b>Lưu Ý:</b></div>
+					<div>(*) Giá trị cơ bản các hạng giải thưởng khi chưa có “Chia giải Độc Đắc”.</div>
+					<div>(**) Phần chia giải độc đắc phụ thuộc vào giá trị của Độc Đắc và số lượng khách hàng trúng thưởng các hạng giải tương ứng.</div>
+				</div>
+				<div class="congdon"></div><ul class="link-statistic">
+					<li><a href="/thong-ke-.html">Thống kê tần suất xuất hiện</a></li>
+					<li><a href="/thong-ke-tan-suat-.html">Thống kê Jackpot</a></li>
+					<li><a href="/bieu-do-xs-.html">Biểu đồ kết quả</a></li>
+					<li><a href="/do-ve-so-.html">Dò kết quả</a></li>
+				</ul>
+		</div>
+	</center>
+
+
+=== Box 4 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #437 ngày 02/02/2026 - Lúc 13:00
+13
+14
+15
+19
+22
+03
+Giá trị Độc Đắc
+6,110,432,500
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	0	6,110,432,500
+Giải nhất	
+	1	10,000,000
+Giải nhì	
+	4	5,000,000
+Giải ba	
+	53	500,000
+Giải tư	
+	116	100,000
+Giải năm	
+	1,442	30,000
+Giải kk	
+	8,447	10,000
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-02-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 02/02/2026 - Lúc 13:00">#437</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-02-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 02/02/2026 - Lúc 13:00">02/02/2026</a> - Lúc 13:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">13</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">14</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">15</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">19</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">22</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">03</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,110,432,500</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>6,110,432,500</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>4</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">53</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>116</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1,442</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>8,447</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</center>
+
+
+=== Box 5 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #436 ngày 01/02/2026 - Lúc 21:00
+01
+20
+24
+26
+35
+03
+Giá trị Độc Đắc
+6,536,712,500
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	1	6,536,712,500
+Giải nhất	
+	0	10,000,000
+Giải nhì	
+	17	5,000,000
+Giải ba	
+	56	500,000
+Giải tư	
+	184	100,000
+Giải năm	
+	1,727	30,000
+Giải kk	
+	13,149	10,000
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-01-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 01/02/2026 - Lúc 21:00">#436</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-01-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 01/02/2026 - Lúc 21:00">01/02/2026</a> - Lúc 21:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">01</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">20</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">24</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">26</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">35</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">03</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,536,712,500</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1</span></td>
+						<td align="right"><span><strong>6,536,712,500</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>17</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">56</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>184</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1,727</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>13,149</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</center>
+
+
+=== Box 6 ===
+TIME CHECK: Found Time
+KẾT QUẢ LOTTO 5/35
+Kết quả QSMT kỳ #435 ngày 01/02/2026 - Lúc 13:00
+07
+15
+19
+22
+34
+09
+Giá trị Độc Đắc
+6,455,132,500
+Giải	Trùng khớp	Số lượng	Giá trị
+Độc đắc	
+	0	6,455,132,500
+Giải nhất	
+	0	10,000,000
+Giải nhì	
+	6	5,000,000
+Giải ba	
+	49	500,000
+Giải tư	
+	109	100,000
+Giải năm	
+	1,352	30,000
+Giải kk	
+	9,363	10,000
+
+--- HTML ---
+
+	<center>
+		<div class="title">Kết quả Lotto 5/35</div>
+		<div class="content_vl">
+			<div class="ngay">Kết quả QSMT kỳ <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-01-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 01/02/2026 - Lúc 13:00">#435</a> ngày <a href="/xs-lotto-535-ket-qua-lotto-535-ngay-01-02-2026.html" title="Kết quả xổ số Lotto 5/35 ngày 01/02/2026 - Lúc 13:00">01/02/2026</a> - Lúc 13:00</div>
+			<div class="box_ketqua">
+				<span class="ball ball_lotto" id="lotto535_G1">07</span> 
+				<span class="ball ball_lotto" id="lotto535_G2">15</span> 
+				<span class="ball ball_lotto" id="lotto535_G3">19</span> 
+				<span class="ball ball_lotto" id="lotto535_G4">22</span> 
+				<span class="ball ball_lotto" id="lotto535_G5">34</span> 
+				<span class="ball ball_lotto_2" id="lotto535_G6">09</span>
+			</div>
+			<div class="giatri_jackpot">
+				<div>
+					Giá trị Độc Đắc</div>
+				<div class="gtblive">6,455,132,500</div>
+			</div>
+			<table border="0" cellspacing="5" class="table_vietlott table-lotto" width="100%">
+				<thead>
+					<tr>
+						<th>Giải</th>
+						<th>Trùng khớp</th>
+						<th>Số lượng</th>
+						<th>Giá trị</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Độc đắc</td>
+						<td width="30%">
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>6,455,132,500</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhất</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>0</span></td>
+						<td align="right"><span><strong>10,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải nhì</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>6</span></td>
+						<td align="right"><span><strong>5,000,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải ba</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span id="slgiai_3">49</span></td>
+						<td align="right"><span id="gtgiai_3"><strong>500,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải tư</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>109</span></td>
+						<td align="right"><span><strong>100,000</strong></span></td>
+					</tr>
+					<tr>
+						<td>Giải năm</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>1,352</span></td>
+						<td align="right"><span><strong>30,000</strong></span></td>
+					</tr>
+					<tr class="lotto-gkk">
+						<td>Giải kk</td>
+						<td>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+									<span class="ball ball_lotto"></span>
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2 hasPlus"></span>
+								</div>
+							</div>
+							<div class="line-circle-num">
+								<div class="circle-line-normal">
+								</div>
+								<div class="circle-line-special">
+									<span class="ball ball_lotto_2"></span>
+								</div>
+							</div>
+						</td>
+						<td align="center"><span>9,363</span></td>
+						<td align="right"><span><strong>10,000</strong></span></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</center>
+
+

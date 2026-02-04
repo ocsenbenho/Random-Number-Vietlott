@@ -1,0 +1,363 @@
+Running manual crawl...
+Connected to SQLite database
+[32mINFO[39m [33m PlaywrightCrawler:[39m Starting the crawler.
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xo-so-dien-toan-mega-645.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xo-so-dien-toan-power-655.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xo-so-dien-toan-max-3d.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/loto-535.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing keno from https://minhchinh.com/xo-so-dien-toan-keno.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:Statistics:[39m PlaywrightCrawler request statistics:[90m {"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":32264,"requestsFinishedPerMinute":2,"requestsFailedPerMinute":0,"requestTotalDurationMillis":64528,"requestsTotal":2,"crawlerRuntimeMillis":62306,"retryHistogram":[2]}[39m
+[32mINFO[39m [33m PlaywrightCrawler:AutoscaledPool:[39m state[90m {"currentConcurrency":4,"desiredConcurrency":6,"systemStatus":{"isSystemIdle":true,"memInfo":{"isOverloaded":false,"limitRatio":0.2,"actualRatio":0},"eventLoopInfo":{"isOverloaded":false,"limitRatio":0.6,"actualRatio":0.48},"cpuInfo":{"isOverloaded":false,"limitRatio":0.4,"actualRatio":0},"clientInfo":{"isOverloaded":false,"limitRatio":0.3,"actualRatio":0}}}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 2...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 2 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 2] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 3...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 3 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 3] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 4...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 4 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 4] Found 15 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Attempting to navigate to page 5...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 5 for keno...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-03-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 5] Found 14 candidates for keno
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-02-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-04-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-03-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-02-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-01-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-01-02-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-31-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-31-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-30-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-29-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-29-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-28-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-27-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-26-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-27-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-26-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-25-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-24-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-25-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-23-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-24-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-22-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:Statistics:[39m PlaywrightCrawler request statistics:[90m {"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":13085,"requestsFinishedPerMinute":18,"requestsFailedPerMinute":0,"requestTotalDurationMillis":471051,"requestsTotal":36,"crawlerRuntimeMillis":122339,"retryHistogram":[36]}[39m
+[32mINFO[39m [33m PlaywrightCrawler:AutoscaledPool:[39m state[90m {"currentConcurrency":9,"desiredConcurrency":10,"systemStatus":{"isSystemIdle":true,"memInfo":{"isOverloaded":false,"limitRatio":0.2,"actualRatio":0},"eventLoopInfo":{"isOverloaded":false,"limitRatio":0.6,"actualRatio":0.296},"cpuInfo":{"isOverloaded":false,"limitRatio":0.4,"actualRatio":0},"clientInfo":{"isOverloaded":false,"limitRatio":0.3,"actualRatio":0}}}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-22-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-19-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-18-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-21-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-20-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-20-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-19-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-18-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-15-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-17-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-16-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-17-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing mega645 from https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-15-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing power655 from https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-13-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing max3d from https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Processing loto535 from https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-14-01-2026.html
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for mega645...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for mega645
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for power655...
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for max3d...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for max3d
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 5 candidates for power655
+[32mINFO[39m [33m PlaywrightCrawler:[39m Crawling page 1 for loto535...
+[32mINFO[39m [33m PlaywrightCrawler:[39m [Page 1] Found 0 candidates for loto535
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-12-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-12-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"Wp7TZrXbUqnQbUA","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-12-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-13-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-13-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"DbW76XEjHjWPOe4","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-13-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-12-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-12-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"mpL919gVEqHAJxa","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-12-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-11-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-11-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"3xay1fBSDgDU2YS","url":"https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-11-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-10-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-10-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"UAHdYz6N3q87snN","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-10-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-10-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-10-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"aFp2HtTsLJu3Mgd","url":"https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-10-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-09-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-09-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"rqKWNRO7nJ9X8Fg","url":"https://minhchinh.com/xs-mega-645-ket-qua-mega-645-ngay-09-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-11-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-11-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"0Lfhm1l55ABhy4X","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-11-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"efOsB8DZWnx6e4x","url":"https://minhchinh.com/xs-max-3d-ket-qua-max-3d-ngay-09-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"IQoHxDVsWp0h7Wj","url":"https://minhchinh.com/xs-power-655-ket-qua-power-655-ngay-08-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"y6HTv9fsn987BVc","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-09-01-2026.html","retryCount":1}[39m
+[33mWARN[39m [33m PlaywrightCrawler:[39m Reclaiming failed request back to the list or queue. page.goto: net::ERR_EMPTY_RESPONSE at https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-01-2026.html
+Call log:
+[2m  - navigating to "https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-01-2026.html", waiting until "load"[22m
+
+[90m {"id":"NR8DbzYngnjBhZ1","url":"https://minhchinh.com/xs-loto-535-ket-qua-lotto-535-ngay-08-01-2026.html","retryCount":1}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Final request statistics:[90m {"requestsFinished":57,"requestsFailed":0,"retryHistogram":[57],"requestAvgFailedDurationMillis":null,"requestAvgFinishedDurationMillis":12343,"requestsFinishedPerMinute":22,"requestsFailedPerMinute":0,"requestTotalDurationMillis":703556,"requestsTotal":57,"crawlerRuntimeMillis":153301}[39m
+[32mINFO[39m [33m PlaywrightCrawler:[39m Finished! Total 57 requests: 57 succeeded, 0 failed.[90m {"terminal":true}[39m
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+Failed to launch browser. Please check the following:
+- Try installing the required dependencies by running `npx playwright install --with-deps` (https://playwright.dev/docs/browsers).
+
+The original error is available in the `cause` property. Below is the error received when trying to launch a browser:
+​
+browserType.launchPersistentContext: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/nguyenduyanh/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://127.0.0.1:63673 --proxy-bypass-list=<-loopback> --disable-blink-features=AutomationControlled --user-data-dir=/var/folders/3p/xc_6qbhn749b0xpc82xvv7lh0000gn/T/playwright_chromiumdev_profile-m6IFxE --remote-debugging-pipe about:blank
+<launched> pid=73706
+[pid=73706] <gracefully close start>
+Call log:
+[2m  - <launching> /Users/nguyenduyanh/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://127.0.0.1:63673 --proxy-bypass-list=<-loopback> --disable-blink-features=AutomationControlled --user-data-dir=/var/folders/3p/xc_6qbhn749b0xpc82xvv7lh0000gn/T/playwright_chromiumdev_profile-m6IFxE --remote-debugging-pipe about:blank[22m
+[2m  - <launched> pid=73706[22m
+[2m  - [pid=73706] <gracefully close start>[22m
+[2m  - [pid=73706] <forcefully close>[22m
+[2m  - [pid=73706] <kill>[22m
+[2m  - [pid=73706] <will force kill>[22m
+[2m  - [pid=73706] <process did exit: exitCode=null, signal=SIGKILL>[22m
+[2m  - [pid=73706] starting temporary directories cleanup[22m
+[2m  - [pid=73706] finished temporary directories cleanup[22m
+[2m  - [pid=73706] <gracefully close end>[22m
+
+    at async PlaywrightPlugin._launch (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/playwright/playwright-plugin.js:106:40)
+    at async BrowserPool._launchBrowser (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:496:29)
+    at async /Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:293:37
+Error thrown at:
+
+    at PlaywrightPlugin._throwAugmentedLaunchError (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/abstract-classes/browser-plugin.js:153:15)
+    at PlaywrightPlugin._throwOnFailedLaunch (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/playwright/playwright-plugin.js:167:14)
+    at /Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/playwright/playwright-plugin.js:109:33
+    at async PlaywrightPlugin._launch (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/playwright/playwright-plugin.js:106:40)
+    at async BrowserPool._launchBrowser (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:496:29)
+    at async /Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:293:37 {
+  name: 'BrowserLaunchError',
+  [cause]: browserType.launchPersistentContext: Target page, context or browser has been closed
+  Browser logs:
+  
+  <launching> /Users/nguyenduyanh/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://127.0.0.1:63673 --proxy-bypass-list=<-loopback> --disable-blink-features=AutomationControlled --user-data-dir=/var/folders/3p/xc_6qbhn749b0xpc82xvv7lh0000gn/T/playwright_chromiumdev_profile-m6IFxE --remote-debugging-pipe about:blank
+  <launched> pid=73706
+  [pid=73706] <gracefully close start>
+  Call log:
+  [2m  - <launching> /Users/nguyenduyanh/Library/Caches/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --proxy-server=http://127.0.0.1:63673 --proxy-bypass-list=<-loopback> --disable-blink-features=AutomationControlled --user-data-dir=/var/folders/3p/xc_6qbhn749b0xpc82xvv7lh0000gn/T/playwright_chromiumdev_profile-m6IFxE --remote-debugging-pipe about:blank[22m
+  [2m  - <launched> pid=73706[22m
+  [2m  - [pid=73706] <gracefully close start>[22m
+  [2m  - [pid=73706] <forcefully close>[22m
+  [2m  - [pid=73706] <kill>[22m
+  [2m  - [pid=73706] <will force kill>[22m
+  [2m  - [pid=73706] <process did exit: exitCode=null, signal=SIGKILL>[22m
+  [2m  - [pid=73706] starting temporary directories cleanup[22m
+  [2m  - [pid=73706] finished temporary directories cleanup[22m
+  [2m  - [pid=73706] <gracefully close end>[22m
+  
+      at async PlaywrightPlugin._launch (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/playwright/playwright-plugin.js:106:40)
+      at async BrowserPool._launchBrowser (/Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:496:29)
+      at async /Users/nguyenduyanh/Project/Random Number Vietlot/backend/node_modules/@crawlee/browser-pool/browser-pool.js:293:37
+}
+
+Node.js v24.3.0

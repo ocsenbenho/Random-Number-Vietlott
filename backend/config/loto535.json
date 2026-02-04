@@ -1,0 +1,22 @@
+{
+    "name": "Loto 5/35",
+    "type": "compound",
+    "parts": [
+        {
+            "name": "A",
+            "type": "matrix",
+            "min": 1,
+            "max": 35,
+            "size": 5,
+            "allowDuplicate": false
+        },
+        {
+            "name": "B",
+            "type": "matrix",
+            "min": 1,
+            "max": 12,
+            "size": 1,
+            "allowDuplicate": false
+        }
+    ]
+}
