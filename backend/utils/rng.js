@@ -116,4 +116,40 @@ function generateOptimizedMatrix(min, max, count) {
     return result;
 }
 
-module.exports = { secureRandomInt, generateMatrix, generateDigits, generateOptimizedMatrix };
+/**
+ * Generate numbers using a "Mechanical Simulation" (Fisher-Yates Shuffle).
+ * Simulates putting all balls in a drum and mixing them.
+ * @param {number} min 
+ * @param {number} max 
+ * @param {number} count 
+ * @param {boolean} sorted - If true (default), sort results ascending. If false, return in draw order.
+ * @returns {number[]}
+ */
+function generateMechanicalDraw(min, max, count, sorted = true) {
+    if (max - min + 1 < count) {
+        throw new Error("Range is too small for distinct numbers");
+    }
+
+    // 1. Create the "Drum" with all balls
+    const drum = [];
+    for (let i = min; i <= max; i++) {
+        drum.push(i);
+    }
+
+    // 2. Shuffle (Fisher-Yates) using Crypto RNG
+    // We only need to shuffle the first 'count' elements to get a valid result.
+    // Equivalent to picking 'count' balls one by one from the mixed drum.
+    for (let i = 0; i < count; i++) {
+        const j = i + crypto.randomInt(drum.length - i);
+        // Swap
+        [drum[i], drum[j]] = [drum[j], drum[i]];
+    }
+
+    // 3. Take the first 'count' balls
+    const result = drum.slice(0, count);
+
+    // 4. Sort for display convention (Vietlott always sorts results) - unless explicitly disabled
+    return sorted ? result.sort((a, b) => a - b) : result;
+}
+
+module.exports = { secureRandomInt, generateMatrix, generateDigits, generateOptimizedMatrix, generateMechanicalDraw };

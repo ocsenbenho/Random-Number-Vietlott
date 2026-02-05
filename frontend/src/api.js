@@ -11,11 +11,14 @@ export async function fetchGames() {
     }
 }
 
-export async function generateNumbers(gameId, isSmart = false) {
+export async function generateNumbers(gameId, isSmart = false, strategy = 'random') {
     try {
         let url = `${API_BASE_URL}/generate?game=${gameId}`;
         if (isSmart) {
             url += `&smart=true`;
+        }
+        if (strategy) {
+            url += `&strategy=${strategy}`;
         }
         const response = await fetch(url);
         if (!response.ok) throw new Error('Failed to generate numbers');

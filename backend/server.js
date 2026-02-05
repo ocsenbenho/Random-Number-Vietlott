@@ -2,10 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
-const { generateMatrix, generateDigits, generateOptimizedMatrix } = require('./utils/rng');
+const { generateMatrix, generateDigits, generateOptimizedMatrix, generateMechanicalDraw } = require('./utils/rng');
 const { saveCombination, getSavedCombinations, db } = require('./utils/db');
 const { seedHistory, checkHistory } = require('./utils/history_loader');
 const { runCrawler } = require('./utils/crawler');
+const { initScheduler } = require('./utils/scheduler');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,6 +16,9 @@ app.use(express.json());
 
 // Initialize History Data
 seedHistory();
+
+// Initialize Scheduler
+initScheduler();
 
 // Load Configs
 const configs = {};
@@ -34,132 +38,171 @@ app.use((req, res, next) => {
 });
 
 // Routes
+
+// GET /games - List all available games
 app.get('/games', (req, res) => {
-    const games = Object.keys(configs).map(key => ({
-        id: key,
-        name: configs[key].name
+    const gamesList = Object.entries(configs).map(([id, config]) => ({
+        id,
+        name: config.name
     }));
-    res.json(games);
+    res.json(gamesList);
 });
 
-// Save Endpoint
+// POST /save - Save a combination
 app.post('/save', (req, res) => {
     const { game, numbers, type } = req.body;
     if (!game || !numbers) {
         return res.status(400).json({ error: "Missing game or numbers" });
     }
-
     saveCombination({ game, numbers, type }, (err, id) => {
         if (err) {
-            console.error(err);
-            return res.status(500).json({ error: "Failed to save" });
+            return res.status(500).json({ error: err.message });
         }
         res.json({ success: true, id });
     });
 });
 
-// Get Saved Endpoint
+// GET /saved - Get saved combinations
 app.get('/saved', (req, res) => {
-    const limit = req.query.limit || 10;
-    const game = req.query.game; // Optional filter
-
-    getSavedCombinations(limit, game, (err, rows) => {
+    const { limit, game } = req.query;
+    getSavedCombinations(parseInt(limit) || 10, game, (err, items) => {
         if (err) {
-            console.error(err);
-            return res.status(500).json({ error: "Failed to fetch saved items" });
+            return res.status(500).json({ error: err.message });
         }
-        res.json(rows);
+        res.json(items);
     });
 });
 
-// History Check Endpoint
+// POST /check-history - Check generated numbers against history
 app.post('/check-history', (req, res) => {
     const { game, numbers } = req.body;
     if (!game || !numbers) {
         return res.status(400).json({ error: "Missing game or numbers" });
     }
-
-    checkHistory(game, numbers, (err, match) => {
+    checkHistory(game, numbers, (err, result) => {
         if (err) {
-            console.error(err);
-            return res.status(500).json({ error: "Failed to check history" });
+            return res.status(500).json({ error: err.message });
         }
-        res.json({ match }); // Returns match object or null
+        res.json(result);
     });
 });
 
-// Crawl Endpoint
-app.post('/crawl', async (req, res) => {
-    try {
-        console.log("Received crawl request");
-        const stats = await runCrawler();
-        console.log("Crawl finished successfully", stats);
-        res.json({
-            message: "Crawl completed",
-            stats: stats
-        });
-    } catch (err) {
-        console.error("Crawl error:", err);
-        res.status(500).json({ error: "Crawler failed" });
-    }
-});
-
-// Get History Endpoint
+// GET /history - Get draw history for a game
 app.get('/history', (req, res) => {
     const { game } = req.query;
-    let sql = "SELECT * FROM draw_history";
-    const params = [];
-
-    if (game) {
-        sql += " WHERE game = ?";
-        params.push(game);
+    if (!game) {
+        return res.status(400).json({ error: "Missing game parameter" });
     }
-
-    sql += " ORDER BY draw_date DESC LIMIT 50";
-
-    db.all(sql, params, (err, rows) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ error: "Failed to fetch history" });
+    db.all(
+        "SELECT * FROM draw_history WHERE game = ? ORDER BY draw_date DESC LIMIT 100",
+        [game],
+        (err, rows) => {
+            if (err) {
+                return res.status(500).json({ error: err.message });
+            }
+            res.json(rows.map(r => ({
+                ...r,
+                numbers: JSON.parse(r.numbers)
+            })));
         }
-        // Parse numbers string back to array
-        const results = rows.map(row => ({
-            ...row,
-            numbers: JSON.parse(row.numbers)
-        }));
-        res.json(results);
-    });
+    );
 });
 
-app.get('/generate', (req, res) => {
-    const { game, smart } = req.query; // smart parameter
+// POST /crawl - Trigger data crawl
+app.post('/crawl', async (req, res) => {
+    console.log("Received crawl request");
+    try {
+        const result = await runCrawler();
+        console.log("Crawl finished successfully", result);
+        res.json({ success: true, stats: result });
+    } catch (err) {
+        console.error("Crawl error:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+const { getHistory, analyze, generateWeighted } = require('./utils/analyzer');
+
+app.get('/generate', async (req, res) => {
+    const { game, smart, strategy } = req.query; // strategy: 'random', 'smart', 'prediction'
     if (!game || !configs[game]) {
         return res.status(400).json({ error: "Invalid game" });
     }
 
     const config = configs[game];
-    const isSmart = smart === 'true'; // Check if smart mode is enabled
-
-    // Helper to choose generator
-    const getGenerator = (min, max, size, allowDuplicate) => {
-        if (allowDuplicate) return generateDigits(min, max, size);
-        if (isSmart) return generateOptimizedMatrix(min, max, size);
-        return generateMatrix(min, max, size);
-    };
+    const mode = strategy || (smart === 'true' ? 'smart' : 'random');
 
     let result;
-    if (config.type === 'compound') {
-        result = config.parts.map(part => {
-            return getGenerator(part.min, part.max, part.size, part.allowDuplicate);
-        });
+
+    if (mode === 'prediction') {
+        try {
+            if (config.type === 'compound') {
+                const part1 = config.parts[0];
+                const history = await getHistory(game, 50);
+                const stats = analyze(history, part1.min, part1.max);
+                const res1 = generateWeighted(part1.min, part1.max, part1.size, stats);
+
+                const part2 = config.parts[1];
+                const res2 = generateMechanicalDraw(part2.min, part2.max, part2.size);
+
+                result = [res1, res2];
+            } else if (game === 'power655') {
+                // SPECIAL HANDLING FOR POWER 6/55 PREDICTION
+                const history = await getHistory(game, 50);
+                const stats = analyze(history, 1, 55);
+                const raw = generateWeighted(1, 55, 7, stats, false); // false = unsorted
+
+                const main = raw.slice(0, 6).sort((a, b) => a - b);
+                const special = [raw[6]];
+                result = [main, special];
+            } else {
+                const history = await getHistory(game, 50);
+                const stats = analyze(history, config.min, config.max);
+                result = generateWeighted(config.min, config.max, config.size, stats);
+            }
+        } catch (err) {
+            console.error("Prediction failed, falling back to Mechanical:", err);
+            if (game === 'power655') {
+                const raw = generateMechanicalDraw(1, 55, 7, false);
+                const main = raw.slice(0, 6).sort((a, b) => a - b);
+                const special = [raw[6]];
+                result = [main, special];
+            } else if (config.type === 'compound') {
+                result = config.parts.map(p => generateMechanicalDraw(p.min, p.max, p.size));
+            } else {
+                result = generateMechanicalDraw(config.min, config.max, config.size);
+            }
+        }
     } else {
-        result = getGenerator(config.min, config.max, config.size, config.allowDuplicate);
+        const getGenerator = (min, max, size, allowDuplicate) => {
+            if (allowDuplicate) return generateDigits(min, max, size);
+            if (mode === 'smart') return generateOptimizedMatrix(min, max, size);
+            return generateMechanicalDraw(min, max, size);
+        };
+
+        if (game === 'power655') {
+            // SPECIAL HANDLING FOR POWER 6/55 STANDARD/SMART
+            const raw = generateMechanicalDraw(1, 55, 7, false);
+            const main = raw.slice(0, 6).sort((a, b) => a - b);
+            const special = [raw[6]];
+            result = [main, special];
+        } else if (config.type === 'compound') {
+            result = config.parts.map(part => {
+                return getGenerator(part.min, part.max, part.size, part.allowDuplicate);
+            });
+        } else {
+            result = getGenerator(config.min, config.max, config.size, config.allowDuplicate);
+        }
     }
+
+    // Force type='compound' for Power 6/55 so frontend renders separation
+    const responseType = game === 'power655' ? 'compound' : (config.type || 'standard');
 
     res.json({
         game: config.name,
         numbers: result,
-        type: config.type || 'standard'
+        type: responseType,
+        mode: mode
     });
 });
 

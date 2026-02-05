@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <h1>Antigravity Lotto</h1>
-            <p>Tạo bộ số ngẫu nhiên theo đúng luật Vietlott</p>
+            <p>Tạo bộ số ngẫu nhiên </p>
         </header>
     );
 };

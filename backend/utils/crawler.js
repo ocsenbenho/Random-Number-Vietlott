@@ -65,7 +65,7 @@ const BASE_URLS = [
     { url: 'https://www.minhchinh.com/xo-so-dien-toan-lotto-535.html', game: 'loto535' }
 ];
 
-const URLS = [...BASE_URLS, ...generateHistoricalUrls()];
+// const URLS = [...BASE_URLS, ...generateHistoricalUrls()]; // Moved inside runCrawler
 
 const saveToDbPromise = (game, drawDate, numbers) => {
     return new Promise((resolve, reject) => {
@@ -100,7 +100,29 @@ const saveToDbPromise = (game, drawDate, numbers) => {
 };
 
 const runCrawler = async (specificGame = null) => {
+    // 1. Generate URLs dynamically (so 'today' is correct)
+    const currentHistoryUrls = generateHistoricalUrls();
+    const allUrls = [...BASE_URLS, ...currentHistoryUrls];
 
+    // Filter if needed
+    const urlsToCrawl = (specificGame ? allUrls.filter(u => u.game === specificGame) : allUrls).map(u => {
+        // For BASE_URLS (latest results), we MUST recrawl them every time.
+        // We add a uniqueKey based on timestamp to force Crawlee to treat them as new.
+        // For history URLs (date specific), we can keep them standard (skip if done), 
+        // but since we want to ensure we get data, let's just force all for now or 
+        // strictly force BASE_URLS.
+        if (BASE_URLS.find(b => b.url === u.url)) {
+            return {
+                url: u.url,
+                uniqueKey: `${u.url}-${Date.now()}`, // Force recrawl
+                userData: { game: u.game }
+            };
+        }
+        return {
+            url: u.url,
+            userData: { game: u.game } // Pass game code in userData
+        };
+    });
 
     const stats = {
         processed: 0,
@@ -112,10 +134,10 @@ const runCrawler = async (specificGame = null) => {
         // Headless is true by default
         headless: true,
         requestHandler: async ({ page, request, log }) => {
-            const urlData = URLS.find(u => u.url === request.url);
-            if (!urlData) return;
+            // Retrieve game from userData (since we can't lookup in static URLS anymore)
+            const game = request.userData.game;
+            if (!game) return;
 
-            const game = urlData.game;
             log.info(`Processing ${game} from ${request.url}`);
 
             try {
@@ -336,8 +358,7 @@ const runCrawler = async (specificGame = null) => {
         },
     });
 
-    const urlsToCrawl = specificGame ? URLS.filter(u => u.game === specificGame) : URLS;
-    await crawler.run(urlsToCrawl.map(u => u.url));
+    await crawler.run(urlsToCrawl);
     return stats;
 };
 

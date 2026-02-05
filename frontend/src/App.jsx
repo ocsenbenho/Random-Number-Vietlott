@@ -12,7 +12,7 @@ function App() {
   const [crawling, setCrawling] = useState(false); // Added crawling state
   const [error, setError] = useState(null);
   const [savedItems, setSavedItems] = useState([]);
-  const [isSmartMode, setIsSmartMode] = useState(false);
+  const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction'
   const [historyMatch, setHistoryMatch] = useState(null); // State for history match alert
   const [historyData, setHistoryData] = useState([]); // Store crawled history
   const [showHistory, setShowHistory] = useState(false); // Toggle history view
@@ -97,20 +97,20 @@ function App() {
     const delayPromise = new Promise(resolve => setTimeout(resolve, 500));
 
     try {
-      const [data] = await Promise.all([generateNumbers(selectedGame, isSmartMode), delayPromise]);
+      const [data] = await Promise.all([generateNumbers(selectedGame, false, strategy), delayPromise]);
       setResult(data);
 
       // Check history ONLY for standard games (Mega/Power) that have single number array
       if (data.type !== 'compound') {
         const historyCheck = await checkHistory(selectedGame, data.numbers);
-        if (historyCheck && historyCheck.match) {
-          setHistoryMatch(historyCheck.match);
+        if (historyCheck && historyCheck.totalDraws > 0) {
+          setHistoryMatch(historyCheck);
         }
       } else if (data.type === 'compound' && data.numbers[0]) {
         // For compound (Power/Loto), check the main set (numbers[0])
         const historyCheck = await checkHistory(selectedGame, data.numbers[0]);
-        if (historyCheck && historyCheck.match) {
-          setHistoryMatch(historyCheck.match);
+        if (historyCheck && historyCheck.totalDraws > 0) {
+          setHistoryMatch(historyCheck);
         }
       }
 
@@ -213,20 +213,31 @@ function App() {
                           </td>
                           <td style={{ padding: '0.5rem 0.2rem' }}>
                             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2px' }}>
-                              {Array.isArray(item.numbers) && item.numbers.map((n, i) => (
-                                <span key={i} style={{
-                                  display: 'inline-block',
-                                  width: '20px',
-                                  height: '20px',
-                                  textAlign: 'center',
-                                  lineHeight: '20px',
-                                  borderRadius: '50%',
-                                  background: highlightNumbers.includes(n) ? '#ffeba7' : '#eee',
-                                  color: highlightNumbers.includes(n) ? '#d97706' : '#333',
-                                  fontSize: '11px',
-                                  fontWeight: 'bold'
-                                }}>{n}</span>
-                              ))}
+                              {Array.isArray(item.numbers) && item.numbers.map((n, i) => {
+                                let isSpecial = false;
+                                // Power 6/55: 7th number (index 6) is Special
+                                if (selectedGame === 'power655' && i === 6) {
+                                  isSpecial = true;
+                                }
+
+                                return (
+                                  <span key={i} style={{
+                                    display: 'inline-block',
+                                    width: '20px',
+                                    height: '20px',
+                                    textAlign: 'center',
+                                    lineHeight: '20px',
+                                    borderRadius: '50%',
+                                    background: isSpecial ? '#ef4444' : (highlightNumbers.includes(n) ? '#ffeba7' : '#eee'),
+                                    color: isSpecial ? '#fff' : (highlightNumbers.includes(n) ? '#d97706' : '#333'),
+                                    fontSize: '11px',
+                                    fontWeight: 'bold',
+                                    marginRight: (selectedGame === 'power655' && i === 5) ? '4px' : '0' // Add gap before special num
+                                  }}>
+                                    {n}
+                                  </span>
+                                );
+                              })}
                             </div>
                           </td>
                         </tr>
@@ -261,17 +272,26 @@ function App() {
           <section className="generator">
             {selectedGame && (
               <div className="controls" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                <div className="smart-toggle" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: '#fff', padding: '0.5rem 1rem', borderRadius: '20px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
-                  <input
-                    type="checkbox"
-                    id="smart-mode"
-                    checked={isSmartMode}
-                    onChange={(e) => setIsSmartMode(e.target.checked)}
-                    style={{ width: '18px', height: '18px', cursor: 'pointer' }}
-                  />
-                  <label htmlFor="smart-mode" style={{ fontSize: '0.9rem', cursor: 'pointer', userSelect: 'none' }}>
-                    Chế độ tối ưu (Smart Pick)
-                  </label>
+                <div className="strategy-selector" style={{ width: '100%', maxWidth: '320px' }}>
+                  <label htmlFor="strategy" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Chế độ tạo số:</label>
+                  <select
+                    id="strategy"
+                    value={strategy}
+                    onChange={(e) => setStrategy(e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '0.8rem',
+                      borderRadius: '8px',
+                      border: '1px solid #ddd',
+                      fontSize: '1rem',
+                      background: '#fff',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <option value="random">🎲 Ngẫu nhiên (Mô phỏng lồng cầu)</option>
+                    <option value="smart">🧠 Thông minh (Loại trừ số xấu)</option>
+                    <option value="prediction">🔮 Dự đoán (Phân tích dữ liệu)</option>
+                  </select>
                 </div>
 
                 <button
