@@ -16,6 +16,7 @@ function App() {
   const [savedItems, setSavedItems] = useState([]);
   const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction' | 'enhanced'
   const [showSimulation, setShowSimulation] = useState(false);
+  const [isSimulating, setIsSimulating] = useState(false);  // Track if simulation is running
   const [historyMatch, setHistoryMatch] = useState(null);
   const [historyData, setHistoryData] = useState([]);
   const [showHistory, setShowHistory] = useState(false);
@@ -134,7 +135,7 @@ function App() {
         game: selectedGame, // Use ID for consistency with filter
         numbers: result.numbers,
         type: result.type,
-        is_smart: isSmartMode
+        is_smart: strategy === 'smart'
       });
       alert("Đã lưu bộ số vào SQLite DB!");
       loadSavedItems(selectedGame); // Reload list for current game
@@ -345,15 +346,6 @@ function App() {
                     🎰 Hiển thị mô phỏng máy quay số
                   </label>
                 </div>
-
-                <button
-                  className="primary-btn"
-                  onClick={handleGenerate}
-                  disabled={loading}
-                  style={{ width: '100%', maxWidth: '320px' }}
-                >
-                  {loading ? 'Đang xử lý...' : 'Tạo bộ số ngẫu nhiên'}
-                </button>
               </div>
             )}
 
@@ -401,20 +393,23 @@ function App() {
               </div>
             )}
 
-            {result && (
+            {/* Physics Simulation - Show independently */}
+            {showSimulation && selectedGame && (
+              <div style={{ marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '12px' }}>
+                <LotteryMachine
+                  numbers={result ? (result.type === 'compound' ? result.numbers.flat() : result.numbers) : []}
+                  min={1}
+                  max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
+                  pickCount={result ? (result.type === 'compound' ? result.numbers.flat().length : result.numbers.length) : 6}
+                  onGenerate={() => { setIsSimulating(true); return handleGenerate(); }}
+                  onComplete={() => setIsSimulating(false)}
+                />
+              </div>
+            )}
+
+            {/* Only show results when NOT simulating or simulation is off */}
+            {result && (!showSimulation || !isSimulating) && (
               <div className="results">
-                {/* Physics Simulation */}
-                {showSimulation && selectedGame && (
-                  <div style={{ marginBottom: '1.5rem' }}>
-                    <LotteryMachine
-                      numbers={result.type === 'compound' ? result.numbers.flat() : result.numbers}
-                      min={1}
-                      max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
-                      pickCount={result.type === 'compound' ? result.numbers.flat().length : result.numbers.length}
-                      onGenerate={handleGenerate}
-                    />
-                  </div>
-                )}
                 <div className="balls-container">
                   {result.type === 'compound' ? (
                     // Loto 5/35: needs to separate 5 balls and 1 ball

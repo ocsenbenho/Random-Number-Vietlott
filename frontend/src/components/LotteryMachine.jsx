@@ -11,7 +11,8 @@ const LotteryMachine = ({
     min = 1,
     max = 45,
     pickCount = 6,
-    onGenerate  // Callback to generate new numbers
+    onGenerate,  // Callback to generate new numbers
+    onComplete   // Callback when simulation completes
 }) => {
     const canvasRef = useRef(null);
     const animationRef = useRef(null);
@@ -127,6 +128,10 @@ const LotteryMachine = ({
             } else {
                 // Animation complete, show results
                 showResults();
+                // Notify parent that simulation is complete
+                if (onComplete) {
+                    onComplete();
+                }
             }
         };
 
