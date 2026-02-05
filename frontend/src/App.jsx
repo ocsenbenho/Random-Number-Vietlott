@@ -411,6 +411,7 @@ function App() {
                       min={1}
                       max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
                       pickCount={result.type === 'compound' ? result.numbers.flat().length : result.numbers.length}
+                      onGenerate={handleGenerate}
                     />
                   </div>
                 )}

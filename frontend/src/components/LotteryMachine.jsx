@@ -10,13 +10,18 @@ const LotteryMachine = ({
     numbers = [],
     min = 1,
     max = 45,
-    pickCount = 6
+    pickCount = 6,
+    onGenerate  // Callback to generate new numbers
 }) => {
     const canvasRef = useRef(null);
     const animationRef = useRef(null);
     const ballsRef = useRef([]);
+    const numbersRef = useRef(numbers);
     const [displayedBalls, setDisplayedBalls] = useState([]);
     const [isAnimating, setIsAnimating] = useState(false);
+
+    // Keep numbersRef synchronized with numbers prop
+    numbersRef.current = numbers;
 
     // Get a random vibrant color
     const getRandomColor = () => {
@@ -28,8 +33,14 @@ const LotteryMachine = ({
     };
 
     // Initialize and animate balls
-    const startAnimation = () => {
+    const startAnimation = async () => {
         if (isAnimating) return;
+
+        // Generate new numbers if callback provided
+        if (onGenerate) {
+            await onGenerate();
+        }
+
         setIsAnimating(true);
         setDisplayedBalls([]);
 
@@ -141,7 +152,7 @@ const LotteryMachine = ({
         ctx.strokeRect(5, 5, width - 10, height - 60);
 
         // Draw winning numbers at bottom
-        const displayNums = numbers.length > 0 ? numbers : [];
+        const displayNums = numbersRef.current.length > 0 ? numbersRef.current : [];
         const startX = (width - (displayNums.length * 45)) / 2 + 20;
 
         displayNums.forEach((num, idx) => {
