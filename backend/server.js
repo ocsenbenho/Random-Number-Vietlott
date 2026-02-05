@@ -3,10 +3,11 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const { generateMatrix, generateDigits, generateOptimizedMatrix, generateMechanicalDraw } = require('./utils/rng');
-const { saveCombination, getSavedCombinations, db } = require('./utils/db');
+const { saveCombination, getSavedCombinations, deleteCombination, db } = require('./utils/db');
 const { seedHistory, checkHistory } = require('./utils/history_loader');
 const { runCrawler } = require('./utils/crawler');
 const { initScheduler } = require('./utils/scheduler');
+const { entropyPool, generateEnhancedDraw, generateEnhancedDrawUnsorted } = require('./utils/entropy');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -73,6 +74,23 @@ app.get('/saved', (req, res) => {
     });
 });
 
+// DELETE /saved/:id - Delete a saved combination
+app.delete('/saved/:id', (req, res) => {
+    const { id } = req.params;
+    if (!id) {
+        return res.status(400).json({ error: "Missing id parameter" });
+    }
+    deleteCombination(parseInt(id), (err, changes) => {
+        if (err) {
+            return res.status(500).json({ error: err.message });
+        }
+        if (changes === 0) {
+            return res.status(404).json({ error: "Item not found" });
+        }
+        res.json({ success: true, deleted: changes });
+    });
+});
+
 // POST /check-history - Check generated numbers against history
 app.post('/check-history', (req, res) => {
     const { game, numbers } = req.body;
@@ -124,7 +142,7 @@ app.post('/crawl', async (req, res) => {
 const { getHistory, analyze, generateWeighted } = require('./utils/analyzer');
 
 app.get('/generate', async (req, res) => {
-    const { game, smart, strategy } = req.query; // strategy: 'random', 'smart', 'prediction'
+    const { game, smart, strategy } = req.query; // strategy: 'random', 'smart', 'prediction', 'enhanced'
     if (!game || !configs[game]) {
         return res.status(400).json({ error: "Invalid game" });
     }
@@ -134,7 +152,29 @@ app.get('/generate', async (req, res) => {
 
     let result;
 
-    if (mode === 'prediction') {
+    if (mode === 'enhanced') {
+        // ENHANCED MODE: Multi-source entropy (Random.org + crypto + user entropy)
+        try {
+            if (game === 'power655') {
+                const raw = await generateEnhancedDrawUnsorted(1, 55, 7, true);
+                const main = raw.slice(0, 6).sort((a, b) => a - b);
+                const special = [raw[6]];
+                result = [main, special];
+            } else if (config.type === 'compound') {
+                const parts = [];
+                for (const part of config.parts) {
+                    const nums = await generateEnhancedDraw(part.min, part.max, part.size, true);
+                    parts.push(nums);
+                }
+                result = parts;
+            } else {
+                result = await generateEnhancedDraw(config.min, config.max, config.size, true);
+            }
+        } catch (err) {
+            console.error("Enhanced mode failed, falling back to standard:", err);
+            result = generateMechanicalDraw(config.min, config.max, config.size);
+        }
+    } else if (mode === 'prediction') {
         try {
             if (config.type === 'compound') {
                 const part1 = config.parts[0];
@@ -204,6 +244,20 @@ app.get('/generate', async (req, res) => {
         type: responseType,
         mode: mode
     });
+});
+
+// POST /entropy - Receive user entropy from frontend
+app.post('/entropy', (req, res) => {
+    const { mouseX, mouseY, timestamp, keyTiming } = req.body;
+
+    entropyPool.addUserEntropy({
+        mouseX,
+        mouseY,
+        timestamp: timestamp || Date.now(),
+        keyTiming
+    });
+
+    res.json({ success: true, poolSize: entropyPool.pool.length });
 });
 
 app.listen(PORT, () => {

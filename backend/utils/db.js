@@ -56,9 +56,15 @@ function getSavedCombinations(limit, game, callback) {
         callback(null, parsedRows);
     });
 }
+function deleteCombination(id, callback) {
+    db.run("DELETE FROM saved_combinations WHERE id = ?", [id], function (err) {
+        callback(err, this ? this.changes : 0);
+    });
+}
 
 module.exports = {
     db, // Export db instance for other modules
     saveCombination,
-    getSavedCombinations
+    getSavedCombinations,
+    deleteCombination
 };

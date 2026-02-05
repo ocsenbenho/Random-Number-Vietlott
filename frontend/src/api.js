@@ -104,3 +104,16 @@ export async function triggerCrawl() {
         throw error;
     }
 }
+
+export async function deleteNumbers(id) {
+    try {
+        const response = await fetch(`${API_BASE_URL}/saved/${id}`, {
+            method: 'DELETE'
+        });
+        if (!response.ok) throw new Error('Failed to delete');
+        return await response.json();
+    } catch (error) {
+        console.error("Delete error:", error);
+        throw error;
+    }
+}

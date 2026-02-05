@@ -2,20 +2,26 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import GameCard from './components/GameCard';
 import Ball from './components/Ball';
-import { fetchGames, generateNumbers, saveNumbers, fetchSavedNumbers, checkHistory, fetchHistory, triggerCrawl } from './api'; // Added triggerCrawl
+import LotteryMachine from './components/LotteryMachine';
+import { fetchGames, generateNumbers, saveNumbers, fetchSavedNumbers, checkHistory, fetchHistory, triggerCrawl, deleteNumbers } from './api';
+import { useUserEntropy } from './hooks/useUserEntropy';
 
 function App() {
   const [games, setGames] = useState([]);
   const [selectedGame, setSelectedGame] = useState(null);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [crawling, setCrawling] = useState(false); // Added crawling state
+  const [crawling, setCrawling] = useState(false);
   const [error, setError] = useState(null);
   const [savedItems, setSavedItems] = useState([]);
-  const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction'
-  const [historyMatch, setHistoryMatch] = useState(null); // State for history match alert
-  const [historyData, setHistoryData] = useState([]); // Store crawled history
-  const [showHistory, setShowHistory] = useState(false); // Toggle history view
+  const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction' | 'enhanced'
+  const [showSimulation, setShowSimulation] = useState(false);
+  const [historyMatch, setHistoryMatch] = useState(null);
+  const [historyData, setHistoryData] = useState([]);
+  const [showHistory, setShowHistory] = useState(false);
+
+  // Collect user entropy in the background
+  useUserEntropy(true);
 
   useEffect(() => {
     async function loadGames() {
@@ -137,6 +143,16 @@ function App() {
     }
   };
 
+  const handleDelete = async (id) => {
+    if (!confirm("Bạn có chắc muốn xóa bộ số này?")) return;
+    try {
+      await deleteNumbers(id);
+      loadSavedItems(selectedGame); // Reload list after delete
+    } catch (err) {
+      alert("Lỗi khi xóa bộ số");
+    }
+  };
+
   const handleCopy = () => {
     if (!result) return;
     // Format text based on type
@@ -215,10 +231,30 @@ function App() {
                             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2px' }}>
                               {Array.isArray(item.numbers) && item.numbers.map((n, i) => {
                                 let isSpecial = false;
-                                // Power 6/55: 7th number (index 6) is Special
+                                let isGolden = false;
+
+                                // Power 6/55: 7th number (index 6) is Special (red)
                                 if (selectedGame === 'power655' && i === 6) {
                                   isSpecial = true;
                                 }
+                                // Loto 5/35: 6th number (index 5) is Golden Ball (gold)
+                                if (selectedGame === 'loto535' && i === 5) {
+                                  isGolden = true;
+                                }
+
+                                const isMatch = highlightNumbers.includes(n);
+
+                                // Determine background color
+                                let bgColor = '#eee';
+                                if (isSpecial) bgColor = '#ef4444';
+                                else if (isGolden) bgColor = isMatch ? '#fbbf24' : '#fde68a'; // Brighter gold if match
+                                else if (isMatch) bgColor = '#ffeba7';
+
+                                // Determine text color
+                                let txtColor = '#333';
+                                if (isSpecial) txtColor = '#fff';
+                                else if (isGolden) txtColor = '#92400e';
+                                else if (isMatch) txtColor = '#d97706';
 
                                 return (
                                   <span key={i} style={{
@@ -228,11 +264,12 @@ function App() {
                                     textAlign: 'center',
                                     lineHeight: '20px',
                                     borderRadius: '50%',
-                                    background: isSpecial ? '#ef4444' : (highlightNumbers.includes(n) ? '#ffeba7' : '#eee'),
-                                    color: isSpecial ? '#fff' : (highlightNumbers.includes(n) ? '#d97706' : '#333'),
+                                    background: bgColor,
+                                    color: txtColor,
                                     fontSize: '11px',
                                     fontWeight: 'bold',
-                                    marginRight: (selectedGame === 'power655' && i === 5) ? '4px' : '0' // Add gap before special num
+                                    marginRight: ((selectedGame === 'power655' && i === 5) || (selectedGame === 'loto535' && i === 4)) ? '4px' : '0',
+                                    border: isGolden ? '2px solid #d97706' : 'none'
                                   }}>
                                     {n}
                                   </span>
@@ -291,7 +328,22 @@ function App() {
                     <option value="random">🎲 Ngẫu nhiên (Mô phỏng lồng cầu)</option>
                     <option value="smart">🧠 Thông minh (Loại trừ số xấu)</option>
                     <option value="prediction">🔮 Dự đoán (Phân tích dữ liệu)</option>
+                    <option value="enhanced">⚡ Nâng cao (Random.org + Multi-source)</option>
                   </select>
+                </div>
+
+                {/* Simulation Toggle */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                  <input
+                    type="checkbox"
+                    id="simToggle"
+                    checked={showSimulation}
+                    onChange={(e) => setShowSimulation(e.target.checked)}
+                    style={{ width: '18px', height: '18px' }}
+                  />
+                  <label htmlFor="simToggle" style={{ cursor: 'pointer', fontSize: '0.9rem' }}>
+                    🎰 Hiển thị mô phỏng máy quay số
+                  </label>
                 </div>
 
                 <button
@@ -351,6 +403,17 @@ function App() {
 
             {result && (
               <div className="results">
+                {/* Physics Simulation */}
+                {showSimulation && selectedGame && (
+                  <div style={{ marginBottom: '1.5rem' }}>
+                    <LotteryMachine
+                      numbers={result.type === 'compound' ? result.numbers.flat() : result.numbers}
+                      min={1}
+                      max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
+                      pickCount={result.type === 'compound' ? result.numbers.flat().length : result.numbers.length}
+                    />
+                  </div>
+                )}
                 <div className="balls-container">
                   {result.type === 'compound' ? (
                     // Loto 5/35: needs to separate 5 balls and 1 ball
@@ -369,7 +432,12 @@ function App() {
                       <div style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center', borderTop: '1px dashed #ccc', paddingTop: '1rem', width: '100%' }}>
                         <span style={{ alignSelf: 'center', fontWeight: 'bold', color: '#888' }}>Số cầu vàng: </span>
                         {result.numbers[1].map((num, i) => (
-                          <Ball key={`part2-${i}`} number={num} type="matrix" />
+                          <Ball
+                            key={`part2-${i}`}
+                            number={num}
+                            type="matrix"
+                            highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
+                          />
                         ))}
                       </div>
                     </div>
@@ -405,15 +473,33 @@ function App() {
                   const displayName = gameInfo ? gameInfo.name : item.game;
 
                   return (
-                    <li key={item.id} style={{ borderBottom: '1px solid #eee', padding: '0.5rem 0', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 'bold', color: 'var(--primary-red)' }}>{displayName}</span>
-                      <span>
+                    <li key={item.id} style={{ borderBottom: '1px solid #eee', padding: '0.5rem 0', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
+                      <span style={{ fontWeight: 'bold', color: 'var(--primary-red)', minWidth: '80px' }}>{displayName}</span>
+                      <span style={{ flex: 1 }}>
                         {item.type === 'compound' ? (
                           `${item.numbers[0].join(', ')} | ${item.numbers[1]}`
                         ) : (
                           item.numbers.join(', ')
                         )}
                       </span>
+                      <button
+                        onClick={() => handleDelete(item.id)}
+                        style={{
+                          background: 'transparent',
+                          border: 'none',
+                          color: '#dc2626',
+                          cursor: 'pointer',
+                          padding: '4px 8px',
+                          fontSize: '1rem',
+                          borderRadius: '4px',
+                          transition: 'background 0.2s'
+                        }}
+                        onMouseOver={(e) => e.target.style.background = '#fee2e2'}
+                        onMouseOut={(e) => e.target.style.background = 'transparent'}
+                        title="Xóa bộ số này"
+                      >
+                        🗑️
+                      </button>
                     </li>
                   );
                 })}
