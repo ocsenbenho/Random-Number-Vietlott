@@ -210,3 +210,41 @@ Random Number Vietlot/
     │       └── GameCard.jsx
     └── package.json
 ```
+
+---
+
+## 🔀 Git Workflow
+
+### Quy trình phát triển
+
+```
+1. Checkout dev branch
+   git checkout dev
+
+2. Commit & Push → dev (ưu tiên)
+   git add -A
+   git commit -m "message"
+   git push origin dev
+
+3. So sánh dev vs master
+   git log --oneline dev..master
+   git log --oneline master..dev
+
+4. Merge nếu không conflict
+   git checkout master
+   git merge dev
+   git push origin master
+```
+
+### Branch structure
+| Branch | Mô tả |
+|--------|-------|
+| `master` | Production - Code ổn định |
+| `dev` | Development - Code đang phát triển |
+
+### Tags
+| Tag | Mô tả |
+|-----|-------|
+| `v0.0.1` | Initial release |
+| `v1.2.0-stable` | Power 6/55, Prediction Mode, Auto-scheduler |
+| `v1.3.0` | Enhanced RNG: Random.org + User Entropy + Simulation |
