@@ -8,6 +8,7 @@ const { seedHistory, checkHistory } = require('./utils/history_loader');
 const { runCrawler } = require('./utils/crawler');
 const { initScheduler } = require('./utils/scheduler');
 const { entropyPool, generateEnhancedDraw, generateEnhancedDrawUnsorted } = require('./utils/entropy');
+const { generateBalanced, analyzePairs, isValidCombination, CONFIGS } = require('./utils/strategies');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -142,7 +143,7 @@ app.post('/crawl', async (req, res) => {
 const { getHistory, analyze, generateWeighted } = require('./utils/analyzer');
 
 app.get('/generate', async (req, res) => {
-    const { game, smart, strategy } = req.query; // strategy: 'random', 'smart', 'prediction', 'enhanced'
+    const { game, smart, strategy } = req.query; // strategy: 'random', 'smart', 'prediction', 'enhanced', 'balanced'
     if (!game || !configs[game]) {
         return res.status(400).json({ error: "Invalid game" });
     }
@@ -172,6 +173,38 @@ app.get('/generate', async (req, res) => {
             }
         } catch (err) {
             console.error("Enhanced mode failed, falling back to standard:", err);
+            result = generateMechanicalDraw(config.min, config.max, config.size);
+        }
+    } else if (mode === 'balanced') {
+        // BALANCED MODE: Smart selection with odd/even, high/low balance, sum filtering
+        try {
+            const history = await getHistory(game, 50);
+            const stats = analyze(history, config.min, config.max);
+
+            if (game === 'power655') {
+                // Power 6/55: 6 main + 1 special
+                const main = generateBalanced(1, 55, 6, stats, game);
+                // Special number: pick from remaining pool
+                const remaining = [];
+                for (let i = 1; i <= 55; i++) {
+                    if (!main.includes(i)) remaining.push(i);
+                }
+                const specialIdx = Math.floor(Math.random() * remaining.length);
+                const special = [remaining[specialIdx]];
+                result = [main, special];
+            } else if (config.type === 'compound') {
+                const parts = [];
+                for (const part of config.parts) {
+                    const partGame = game === 'loto535' ? 'loto535' : 'mega645';
+                    const nums = generateBalanced(part.min, part.max, part.size, stats, partGame);
+                    parts.push(nums);
+                }
+                result = parts;
+            } else {
+                result = generateBalanced(config.min, config.max, config.size, stats, game);
+            }
+        } catch (err) {
+            console.error("Balanced mode failed, falling back to standard:", err);
             result = generateMechanicalDraw(config.min, config.max, config.size);
         }
     } else if (mode === 'prediction') {

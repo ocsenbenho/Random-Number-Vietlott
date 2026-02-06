@@ -351,48 +351,6 @@ function App() {
 
             {error && <div style={{ color: 'red' }}>{error}</div>}
 
-            {historyMatch && (
-              <div style={{ background: '#f0f9ff', color: '#0369a1', padding: '1rem', borderRadius: '8px', marginBottom: '1rem', border: '1px solid #bae6fd' }}>
-                <h4 style={{ marginTop: 0, marginBottom: '0.5rem' }}>📊 Phân tích Lịch sử (Backtest)</h4>
-                <div>
-                  <strong>
-                    {['max3d', 'max3dpro'].includes(selectedGame) ? "Tỉ lệ xuất hiện:" :
-                      selectedGame === 'loto535' ? "Tỉ lệ trúng (2+ số):" :
-                        `Tỉ lệ trúng (${historyMatch.minMatchesForWin || 3}+ số):`}
-                  </strong>
-                  <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: Number(historyMatch.winRate || 0) > 0 ? '#16a34a' : 'inherit', marginLeft: '0.5rem' }}>
-                    {historyMatch.winRate || 0}%
-                  </span>
-                  <span style={{ fontSize: '0.9rem', color: '#666' }}> ({historyMatch.wins || 0}/{historyMatch.totalDraws || 0} kỳ)</span>
-                </div>
-
-                {historyMatch.matchCounts && Object.keys(historyMatch.matchCounts).length > 0 && (
-                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
-                    <strong>Chi tiết trùng khớp:</strong>
-                    <ul style={{ margin: '0.3rem 0', paddingLeft: '1.2rem' }}>
-                      {Object.entries(historyMatch.matchCounts)
-                        .sort((a, b) => b[0] - a[0]) // Sort by match count desc
-                        .map(([matches, count]) => (
-                          <li key={matches}>
-                            {['max3d', 'max3dpro'].includes(selectedGame) ?
-                              `Xuất hiện ${matches} số:` :
-                              `Trùng ${matches} số:`} {count} lần
-                          </li>
-                        ))}
-                    </ul>
-                  </div>
-                )}
-
-                {/* Handle both old (flat) and new (nested bestMatch) formats for backward compatibility */}
-                {(historyMatch.bestMatch || (historyMatch.drawDate ? historyMatch : null)) && (
-                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem', borderTop: '1px dashed #bae6fd', paddingTop: '0.5rem' }}>
-                    <strong>Kỳ trùng nhiều nhất:</strong> Ngày {(historyMatch.bestMatch || historyMatch).drawDate} <span style={{ color: '#555', fontStyle: 'italic' }}>[{(historyMatch.bestMatch || historyMatch).numbers.join(', ')}]</span>
-                    (Matches: {(historyMatch.bestMatch || historyMatch).matches})
-                  </div>
-                )}
-              </div>
-            )}
-
             {/* Physics Simulation - Show independently */}
             {showSimulation && selectedGame && (
               <div style={{ marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '12px' }}>
@@ -455,6 +413,48 @@ function App() {
                   <button className="action-btn" onClick={handleCopy}>Sao chép</button>
                   <button className="action-btn" onClick={handleSave}>Lưu tạm</button>
                 </div>
+              </div>
+            )}
+
+            {/* Backtest Analysis - Show after simulation completes */}
+            {historyMatch && (!showSimulation || !isSimulating) && (
+              <div style={{ background: '#f0f9ff', color: '#0369a1', padding: '1rem', borderRadius: '8px', marginTop: '1rem', border: '1px solid #bae6fd' }}>
+                <h4 style={{ marginTop: 0, marginBottom: '0.5rem' }}>📊 Phân tích Lịch sử (Backtest)</h4>
+                <div>
+                  <strong>
+                    {['max3d', 'max3dpro'].includes(selectedGame) ? "Tỉ lệ xuất hiện:" :
+                      selectedGame === 'loto535' ? "Tỉ lệ trúng (2+ số):" :
+                        `Tỉ lệ trúng (${historyMatch.minMatchesForWin || 3}+ số):`}
+                  </strong>
+                  <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: Number(historyMatch.winRate || 0) > 0 ? '#16a34a' : 'inherit', marginLeft: '0.5rem' }}>
+                    {historyMatch.winRate || 0}%
+                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#666' }}> ({historyMatch.wins || 0}/{historyMatch.totalDraws || 0} kỳ)</span>
+                </div>
+
+                {historyMatch.matchCounts && Object.keys(historyMatch.matchCounts).length > 0 && (
+                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+                    <strong>Chi tiết trùng khớp:</strong>
+                    <ul style={{ margin: '0.3rem 0', paddingLeft: '1.2rem' }}>
+                      {Object.entries(historyMatch.matchCounts)
+                        .sort((a, b) => b[0] - a[0])
+                        .map(([matches, count]) => (
+                          <li key={matches}>
+                            {['max3d', 'max3dpro'].includes(selectedGame) ?
+                              `Xuất hiện ${matches} số:` :
+                              `Trùng ${matches} số:`} {count} lần
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
+                )}
+
+                {(historyMatch.bestMatch || (historyMatch.drawDate ? historyMatch : null)) && (
+                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem', borderTop: '1px dashed #bae6fd', paddingTop: '0.5rem' }}>
+                    <strong>Kỳ trùng nhiều nhất:</strong> Ngày {(historyMatch.bestMatch || historyMatch).drawDate} <span style={{ color: '#555', fontStyle: 'italic' }}>[{(historyMatch.bestMatch || historyMatch).numbers.join(', ')}]</span>
+                    (Matches: {(historyMatch.bestMatch || historyMatch).matches})
+                  </div>
+                )}
               </div>
             )}
           </section>
