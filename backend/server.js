@@ -9,6 +9,7 @@ const { runCrawler } = require('./utils/crawler');
 const { initScheduler } = require('./utils/scheduler');
 const { entropyPool, generateEnhancedDraw, generateEnhancedDrawUnsorted } = require('./utils/entropy');
 const { generateBalanced, analyzePairs, isValidCombination, CONFIGS } = require('./utils/strategies');
+const { getDraws, analyzeFrequency, analyzeGap, analyzePairs: analyzePairsStats, analyzeOddEven, analyzeSum } = require('./utils/statistics');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -136,6 +137,46 @@ app.post('/crawl', async (req, res) => {
         res.json({ success: true, stats: result });
     } catch (err) {
         console.error("Crawl error:", err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// GET /statistics - Get full statistical report
+app.get('/statistics', async (req, res) => {
+    const { game } = req.query;
+    if (!game) {
+        return res.status(400).json({ error: "Missing game parameter" });
+    }
+
+    try {
+        const config = configs[game];
+        if (!config) return res.status(400).json({ error: "Invalid game" });
+
+        const draws = await getDraws(game);
+        if (draws.length < 5) {
+            return res.json({ success: true, insufficientData: true });
+        }
+
+        const frequency = analyzeFrequency(draws, config.min, config.max);
+        const gaps = analyzeGap(draws, config.min, config.max);
+        const pairs = analyzePairsStats(draws);
+        const oddEven = analyzeOddEven(draws);
+        const sumStats = analyzeSum(draws);
+
+        res.json({
+            success: true,
+            totalDraws: draws.length,
+            frequency: {
+                hot: frequency.slice(0, 10),
+                cold: frequency.slice(-10).reverse()
+            },
+            gaps: gaps.slice(0, 10),
+            pairs: pairs,
+            oddEven: oddEven,
+            sum: sumStats
+        });
+    } catch (err) {
+        console.error("Statistics error:", err);
         res.status(500).json({ error: err.message });
     }
 });

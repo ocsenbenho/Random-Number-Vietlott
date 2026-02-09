@@ -1,35 +1,72 @@
 /**
- * Advanced Lottery Selection Strategies
- * Implements balanced selection, sum filtering, and pattern exclusion
+ * Advanced Lottery Selection Strategies v2
+ * Implements balanced selection, sum filtering, decade balance, and pair preference
+ * Based on statistical analysis of 32 Mega, 31 Power, 115 Loto draws
  */
 
 const { secureRandomInt } = require('./rng');
 
-// ============ CONFIGURATION ============
+// ============ CONFIGURATION (v2 - Based on Research) ============
 
 const CONFIGS = {
     mega645: {
         min: 1, max: 45, count: 6,
         midPoint: 23, // Numbers 1-22 = low, 23-45 = high
-        sumRange: { min: 100, max: 190 }, // Typical winning sum range
+        sumRange: { min: 100, max: 160 }, // Tightened from 100-190 (covers 75% of wins)
         idealOddEven: [3, 3], // 3 odd + 3 even (or 4+2, 2+4)
         idealHighLow: [3, 3], // 3 high + 3 low (or 4+2, 2+4)
+
+        // NEW: Decade balance - how many numbers from each range
+        decadeBalance: {
+            '1-10': { min: 1, max: 2 },
+            '11-20': { min: 1, max: 2 },
+            '21-30': { min: 1, max: 2 },
+            '31-40': { min: 1, max: 2 },
+            '41-45': { min: 0, max: 1 }
+        },
+
+        // NEW: Preferred pairs (appear together frequently)
+        preferredPairs: [[21, 23], [2, 15], [15, 28], [2, 23], [30, 43]]
     },
     power655: {
         min: 1, max: 55, count: 6,
         midPoint: 28,
-        sumRange: { min: 120, max: 220 },
+        sumRange: { min: 160, max: 220 }, // Tightened from 120-220 (covers 68% of wins)
         idealOddEven: [3, 3],
         idealHighLow: [3, 3],
+
+        decadeBalance: {
+            '1-10': { min: 0, max: 2 },
+            '11-20': { min: 1, max: 2 },
+            '21-30': { min: 1, max: 2 },
+            '31-40': { min: 1, max: 2 },
+            '41-50': { min: 0, max: 2 },
+            '51-55': { min: 0, max: 1 }
+        },
+
+        preferredPairs: [[13, 55], [14, 53], [22, 32], [20, 36], [21, 48]]
     },
     loto535: {
         min: 1, max: 35, count: 5,
         midPoint: 18,
-        sumRange: { min: 70, max: 130 },
+        sumRange: { min: 70, max: 130 }, // Based on analysis (82% coverage)
         idealOddEven: [2, 3], // 2 or 3 for 5 numbers
         idealHighLow: [2, 3],
+
+        decadeBalance: {
+            '1-10': { min: 1, max: 2 },  // 36.67% of picks
+            '11-20': { min: 1, max: 2 }, // 25.94%
+            '21-30': { min: 1, max: 2 }, // 24.64%
+            '31-35': { min: 0, max: 1 }  // 12.75%
+        },
+
+        // Numbers 1-10 appear more frequently
+        decadeBias: { '1-10': 1.3, '11-20': 1.0, '21-30': 0.9, '31-35': 0.8 },
+
+        preferredPairs: [[7, 10], [2, 10], [7, 9], [10, 13], [8, 9]]
     }
 };
+
 
 // ============ VALIDATION FUNCTIONS ============
 
@@ -111,21 +148,71 @@ function hasGoodSpread(numbers) {
 }
 
 /**
+ * NEW v2: Check if decade distribution is balanced
+ */
+function isDecadeBalanced(numbers, decadeBalance) {
+    if (!decadeBalance) return true; // Skip if not configured
+
+    const decadeCounts = {};
+
+    // Count numbers in each decade
+    numbers.forEach(n => {
+        Object.keys(decadeBalance).forEach(range => {
+            const [start, end] = range.split('-').map(Number);
+            if (n >= start && n <= end) {
+                decadeCounts[range] = (decadeCounts[range] || 0) + 1;
+            }
+        });
+    });
+
+    // Validate each decade has acceptable count
+    for (const [range, limits] of Object.entries(decadeBalance)) {
+        const count = decadeCounts[range] || 0;
+        if (count < limits.min || count > limits.max) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+/**
+ * NEW v2: Check if combination includes any preferred pairs
+ */
+function hasPreferredPair(numbers, preferredPairs) {
+    if (!preferredPairs || preferredPairs.length === 0) return true;
+
+    for (const [a, b] of preferredPairs) {
+        if (numbers.includes(a) && numbers.includes(b)) {
+            return true;
+        }
+    }
+    return false; // No preferred pair found (soft constraint - not required)
+}
+
+/**
  * Combined validation - check all constraints
  */
 function isValidCombination(numbers, config) {
-    return isOddEvenBalanced(numbers) &&
+    const baseValid = isOddEvenBalanced(numbers) &&
         isHighLowBalanced(numbers, config.midPoint) &&
         isValidSum(numbers, config.sumRange) &&
         !hasExcessiveConsecutive(numbers) &&
         !isSameDecade(numbers) &&
         hasGoodSpread(numbers);
+
+    // Add decade balance check if configured
+    if (baseValid && config.decadeBalance) {
+        return isDecadeBalanced(numbers, config.decadeBalance);
+    }
+
+    return baseValid;
 }
 
 // ============ GENERATION FUNCTIONS ============
 
 /**
- * Generate balanced numbers with constraints
+ * Generate balanced numbers with constraints (v2)
  * @param {number} min - Minimum number
  * @param {number} max - Maximum number
  * @param {number} count - How many numbers to pick
@@ -134,34 +221,65 @@ function isValidCombination(numbers, config) {
  */
 function generateBalanced(min, max, count, stats, game = 'mega645') {
     const config = CONFIGS[game] || CONFIGS.mega645;
-    const maxAttempts = 1000;
+    const maxAttempts = 1500; // Increased for stricter constraints
     let attempts = 0;
+    let bestCandidate = null;
+    let bestScore = 0;
 
     while (attempts < maxAttempts) {
         attempts++;
-        const numbers = generateWeightedPick(min, max, count, stats);
+        const numbers = generateWeightedPick(min, max, count, stats, config);
 
         if (isValidCombination(numbers, config)) {
-            return numbers.sort((a, b) => a - b);
+            // Score based on preferred pairs
+            const hasPair = hasPreferredPair(numbers, config.preferredPairs);
+            const score = hasPair ? 10 : 5;
+
+            if (score > bestScore) {
+                bestScore = score;
+                bestCandidate = numbers;
+            }
+
+            // If we have a preferred pair, accept immediately
+            if (hasPair) {
+                return numbers.sort((a, b) => a - b);
+            }
         }
     }
 
-    // Fallback: return a manually balanced selection
+    // Return best candidate if found, otherwise fallback
+    if (bestCandidate) {
+        return bestCandidate.sort((a, b) => a - b);
+    }
+
     console.warn('Could not find valid combination, using fallback');
     return generateFallbackBalanced(min, max, count, config);
 }
 
 /**
- * Pick numbers based on weights (helper function)
+ * Pick numbers based on weights (v2 - supports decade bias)
  */
-function generateWeightedPick(min, max, count, stats) {
+function generateWeightedPick(min, max, count, stats, config = {}) {
     const pool = [];
     const picked = new Set();
     const result = [];
+    const decadeBias = config.decadeBias || {};
 
-    // Build weighted pool
+    // Build weighted pool with decade bias
     for (let i = min; i <= max; i++) {
-        const weight = Math.floor(stats[i]?.weight || 10);
+        let weight = Math.floor(stats[i]?.weight || 10);
+
+        // Apply decade bias if configured
+        if (Object.keys(decadeBias).length > 0) {
+            for (const [range, bias] of Object.entries(decadeBias)) {
+                const [start, end] = range.split('-').map(Number);
+                if (i >= start && i <= end) {
+                    weight = Math.floor(weight * bias);
+                    break;
+                }
+            }
+        }
+
         for (let w = 0; w < weight; w++) {
             pool.push(i);
         }
@@ -270,16 +388,21 @@ function getPairBonus(pickedNumbers, allStats, partners) {
 
 module.exports = {
     CONFIGS,
+    // Validation functions
     isOddEvenBalanced,
     isHighLowBalanced,
     isValidSum,
     hasExcessiveConsecutive,
     isSameDecade,
     hasGoodSpread,
+    isDecadeBalanced,      // NEW v2
+    hasPreferredPair,      // NEW v2
     isValidCombination,
+    // Generation functions
     generateBalanced,
     generateWeightedPick,
     generateFallbackBalanced,
+    // Pair analysis
     analyzePairs,
     getPairBonus
 };
