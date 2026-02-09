@@ -5,6 +5,9 @@ import Ball from './components/Ball';
 import LotteryMachine from './components/LotteryMachine';
 import { fetchGames, generateNumbers, saveNumbers, fetchSavedNumbers, checkHistory, fetchHistory, triggerCrawl, deleteNumbers } from './api';
 import { useUserEntropy } from './hooks/useUserEntropy';
+import StatisticsDashboard from './components/StatisticsDashboard';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -14,12 +17,12 @@ function App() {
   const [crawling, setCrawling] = useState(false);
   const [error, setError] = useState(null);
   const [savedItems, setSavedItems] = useState([]);
-  const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction' | 'enhanced'
+  const [strategy, setStrategy] = useState('random'); // 'random' | 'smart' | 'prediction' | 'enhanced' | 'balanced'
   const [showSimulation, setShowSimulation] = useState(false);
   const [isSimulating, setIsSimulating] = useState(false);  // Track if simulation is running
   const [historyMatch, setHistoryMatch] = useState(null);
   const [historyData, setHistoryData] = useState([]);
-  const [showHistory, setShowHistory] = useState(false);
+  const [viewMode, setViewMode] = useState('generator'); // 'generator' | 'statistics'
 
   // Collect user entropy in the background
   useUserEntropy(true);
@@ -66,7 +69,6 @@ function App() {
       setHistoryData(data);
     } catch (err) {
       console.error("Error fetching history data:", err);
-      // Optionally set an error state for history data specifically
     }
   }
 
@@ -293,8 +295,9 @@ function App() {
           </div>
         </div>
 
-        {/* Right Content: Game Selector + Generator */}
+        {/* Right Content: Game Selector + Generator + Stats */}
         <div className="main-content" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+
           <section className="game-selector">
             {games.map(game => (
               <GameCard
@@ -307,203 +310,270 @@ function App() {
             ))}
           </section>
 
-          <section className="generator">
-            {selectedGame && (
-              <div className="controls" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                <div className="strategy-selector" style={{ width: '100%', maxWidth: '320px' }}>
-                  <label htmlFor="strategy" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Chế độ tạo số:</label>
-                  <select
-                    id="strategy"
-                    value={strategy}
-                    onChange={(e) => setStrategy(e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '0.8rem',
-                      borderRadius: '8px',
-                      border: '1px solid #ddd',
-                      fontSize: '1rem',
-                      background: '#fff',
-                      cursor: 'pointer'
-                    }}
-                  >
-                    <option value="random">🎲 Ngẫu nhiên (Mô phỏng lồng cầu)</option>
-                    <option value="smart">🧠 Thông minh (Loại trừ số xấu)</option>
-                    <option value="prediction">🔮 Dự đoán (Phân tích dữ liệu)</option>
-                    <option value="enhanced">⚡ Nâng cao (Random.org + Multi-source)</option>
-                  </select>
-                </div>
+          {/* View Toggle */}
+          <div className="view-toggle" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '1rem' }}>
+            <button
+              onClick={() => setViewMode('generator')}
+              style={{
+                padding: '0.6rem 1.2rem',
+                borderRadius: '20px',
+                border: 'none',
+                background: viewMode === 'generator' ? '#2563eb' : '#f1f5f9',
+                color: viewMode === 'generator' ? '#fff' : '#64748b',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                boxShadow: viewMode === 'generator' ? '0 2px 4px rgba(37,99,235,0.2)' : 'none'
+              }}
+            >
+              🎰 Tạo Số
+            </button>
+            <button
+              onClick={() => setViewMode('statistics')}
+              style={{
+                padding: '0.6rem 1.2rem',
+                borderRadius: '20px',
+                border: 'none',
+                background: viewMode === 'statistics' ? '#2563eb' : '#f1f5f9',
+                color: viewMode === 'statistics' ? '#fff' : '#64748b',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                boxShadow: viewMode === 'statistics' ? '0 2px 4px rgba(37,99,235,0.2)' : 'none'
+              }}
+            >
+              📊 Thống Kê
+            </button>
+          </div>
 
-                {/* Simulation Toggle */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                  <input
-                    type="checkbox"
-                    id="simToggle"
-                    checked={showSimulation}
-                    onChange={(e) => setShowSimulation(e.target.checked)}
-                    style={{ width: '18px', height: '18px' }}
-                  />
-                  <label htmlFor="simToggle" style={{ cursor: 'pointer', fontSize: '0.9rem' }}>
-                    🎰 Hiển thị mô phỏng máy quay số
-                  </label>
-                </div>
-              </div>
-            )}
-
-            {error && <div style={{ color: 'red' }}>{error}</div>}
-
-            {/* Physics Simulation - Show independently */}
-            {showSimulation && selectedGame && (
-              <div style={{ marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '12px' }}>
-                <LotteryMachine
-                  numbers={result ? (result.type === 'compound' ? result.numbers.flat() : result.numbers) : []}
-                  min={1}
-                  max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
-                  pickCount={result ? (result.type === 'compound' ? result.numbers.flat().length : result.numbers.length) : 6}
-                  onGenerate={() => { setIsSimulating(true); return handleGenerate(); }}
-                  onComplete={() => setIsSimulating(false)}
-                />
-              </div>
-            )}
-
-            {/* Only show results when NOT simulating or simulation is off */}
-            {result && (!showSimulation || !isSimulating) && (
-              <div className="results">
-                <div className="balls-container">
-                  {result.type === 'compound' ? (
-                    // Loto 5/35: needs to separate 5 balls and 1 ball
-                    // result.numbers will be [[1,2,3,4,5], [9]]
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                      <div style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center' }}>
-                        {result.numbers[0].map((num, i) => (
-                          <Ball
-                            key={`part1-${i}`}
-                            number={num}
-                            type="matrix"
-                            highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
-                          />
-                        ))}
-                      </div>
-                      <div style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center', borderTop: '1px dashed #ccc', paddingTop: '1rem', width: '100%' }}>
-                        <span style={{ alignSelf: 'center', fontWeight: 'bold', color: '#888' }}>Số cầu vàng: </span>
-                        {result.numbers[1].map((num, i) => (
-                          <Ball
-                            key={`part2-${i}`}
-                            number={num}
-                            type="matrix"
-                            highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    result.numbers.map((num, index) => (
-                      <Ball
-                        key={`${selectedGame}-${index}`}
-                        number={num}
-                        type={getBallType(selectedGame)}
-                        highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
-                      />
-                    ))
-                  )}
-                </div>
-                <div className="result-note">
-                  Bộ số được sinh ngẫu nhiên, không dựa trên kết quả trước
-                </div>
-                <div className="actions">
-                  <button className="action-btn" onClick={handleCopy}>Sao chép</button>
-                  <button className="action-btn" onClick={handleSave}>Lưu tạm</button>
-                </div>
-              </div>
-            )}
-
-            {/* Backtest Analysis - Show after simulation completes */}
-            {historyMatch && (!showSimulation || !isSimulating) && (
-              <div style={{ background: '#f0f9ff', color: '#0369a1', padding: '1rem', borderRadius: '8px', marginTop: '1rem', border: '1px solid #bae6fd' }}>
-                <h4 style={{ marginTop: 0, marginBottom: '0.5rem' }}>📊 Phân tích Lịch sử (Backtest)</h4>
-                <div>
-                  <strong>
-                    {['max3d', 'max3dpro'].includes(selectedGame) ? "Tỉ lệ xuất hiện:" :
-                      selectedGame === 'loto535' ? "Tỉ lệ trúng (2+ số):" :
-                        `Tỉ lệ trúng (${historyMatch.minMatchesForWin || 3}+ số):`}
-                  </strong>
-                  <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: Number(historyMatch.winRate || 0) > 0 ? '#16a34a' : 'inherit', marginLeft: '0.5rem' }}>
-                    {historyMatch.winRate || 0}%
-                  </span>
-                  <span style={{ fontSize: '0.9rem', color: '#666' }}> ({historyMatch.wins || 0}/{historyMatch.totalDraws || 0} kỳ)</span>
-                </div>
-
-                {historyMatch.matchCounts && Object.keys(historyMatch.matchCounts).length > 0 && (
-                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
-                    <strong>Chi tiết trùng khớp:</strong>
-                    <ul style={{ margin: '0.3rem 0', paddingLeft: '1.2rem' }}>
-                      {Object.entries(historyMatch.matchCounts)
-                        .sort((a, b) => b[0] - a[0])
-                        .map(([matches, count]) => (
-                          <li key={matches}>
-                            {['max3d', 'max3dpro'].includes(selectedGame) ?
-                              `Xuất hiện ${matches} số:` :
-                              `Trùng ${matches} số:`} {count} lần
-                          </li>
-                        ))}
-                    </ul>
-                  </div>
-                )}
-
-                {(historyMatch.bestMatch || (historyMatch.drawDate ? historyMatch : null)) && (
-                  <div style={{ marginTop: '0.5rem', fontSize: '0.9rem', borderTop: '1px dashed #bae6fd', paddingTop: '0.5rem' }}>
-                    <strong>Kỳ trùng nhiều nhất:</strong> Ngày {(historyMatch.bestMatch || historyMatch).drawDate} <span style={{ color: '#555', fontStyle: 'italic' }}>[{(historyMatch.bestMatch || historyMatch).numbers.join(', ')}]</span>
-                    (Matches: {(historyMatch.bestMatch || historyMatch).matches})
-                  </div>
-                )}
-              </div>
-            )}
-          </section>
-
-          {/* Saved Items Section */}
-          {savedItems.length > 0 && (
-            <section className="saved-items" style={{ background: 'white', padding: '1rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
-              <h3 style={{ marginTop: 0, fontSize: '1.1rem', color: '#555' }}>Bộ số đã lưu (Gần nhất)</h3>
-              <ul style={{ listStyle: 'none', padding: 0 }}>
-                {savedItems.map(item => {
-                  const gameInfo = games.find(g => g.id === item.game);
-                  const displayName = gameInfo ? gameInfo.name : item.game;
-
-                  return (
-                    <li key={item.id} style={{ borderBottom: '1px solid #eee', padding: '0.5rem 0', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
-                      <span style={{ fontWeight: 'bold', color: 'var(--primary-red)', minWidth: '80px' }}>{displayName}</span>
-                      <span style={{ flex: 1 }}>
-                        {item.type === 'compound' ? (
-                          `${item.numbers[0].join(', ')} | ${item.numbers[1]}`
-                        ) : (
-                          item.numbers.join(', ')
-                        )}
-                      </span>
-                      <button
-                        onClick={() => handleDelete(item.id)}
+          {viewMode === 'statistics' ? (
+            <StatisticsDashboard game={selectedGame} />
+          ) : (
+            <>
+              <section className="generator">
+                {selectedGame && (
+                  <div className="controls" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                    <div className="strategy-selector" style={{ width: '100%', maxWidth: '320px' }}>
+                      <label htmlFor="strategy" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>Chế độ tạo số:</label>
+                      <select
+                        id="strategy"
+                        value={strategy}
+                        onChange={(e) => setStrategy(e.target.value)}
                         style={{
-                          background: 'transparent',
-                          border: 'none',
-                          color: '#dc2626',
-                          cursor: 'pointer',
-                          padding: '4px 8px',
+                          width: '100%',
+                          padding: '0.8rem',
+                          borderRadius: '8px',
+                          border: '1px solid #ddd',
                           fontSize: '1rem',
-                          borderRadius: '4px',
-                          transition: 'background 0.2s'
+                          background: '#fff',
+                          cursor: 'pointer'
                         }}
-                        onMouseOver={(e) => e.target.style.background = '#fee2e2'}
-                        onMouseOut={(e) => e.target.style.background = 'transparent'}
-                        title="Xóa bộ số này"
                       >
-                        🗑️
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </section>
+                        <option value="random">🎲 Ngẫu nhiên (Mô phỏng lồng cầu)</option>
+                        <option value="balanced">⚖️ Cân bằng (Tối ưu theo mẫu)</option>
+                        <option value="smart">🧠 Thông minh (Loại trừ số xấu)</option>
+                        <option value="prediction">🔮 Dự đoán (Phân tích dữ liệu)</option>
+                        <option value="enhanced">⚡ Nâng cao (Random.org + Multi-source)</option>
+                      </select>
+                    </div>
+
+                    {/* Simulation Toggle */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                      <input
+                        type="checkbox"
+                        id="simToggle"
+                        checked={showSimulation}
+                        onChange={(e) => setShowSimulation(e.target.checked)}
+                        style={{ width: '18px', height: '18px' }}
+                      />
+                      <label htmlFor="simToggle" style={{ cursor: 'pointer', fontSize: '0.9rem' }}>
+                        🎰 Hiển thị mô phỏng máy quay số
+                      </label>
+                    </div>
+
+                    <button
+                      className="generate-btn"
+                      onClick={() => setShowSimulation(true)}
+                      style={{
+                        display: showSimulation ? 'none' : 'block', // Hide if phys sim is on (sim has its own trigger)
+                        padding: '1rem 2rem',
+                        fontSize: '1.2rem',
+                        background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '50px',
+                        cursor: 'pointer',
+                        boxShadow: '0 4px 15px rgba(239, 68, 68, 0.4)',
+                        marginBottom: '1rem',
+                        fontWeight: 'bold'
+                      }}
+                      onClick={handleGenerate}
+                      disabled={loading}
+                    >
+                      {loading ? 'Đang tạo...' : 'QUAY SỐ NGAY'}
+                    </button>
+                  </div>
+                )}
+
+                {error && <div style={{ color: 'red' }}>{error}</div>}
+
+                {/* Physics Simulation - Show independently */}
+                {showSimulation && selectedGame && (
+                  <div style={{ marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '12px' }}>
+                    <LotteryMachine
+                      numbers={result ? (result.type === 'compound' ? result.numbers.flat() : result.numbers) : []}
+                      min={1}
+                      max={selectedGame === 'mega645' ? 45 : selectedGame === 'power655' ? 55 : selectedGame === 'loto535' ? 35 : 45}
+                      pickCount={result ? (result.type === 'compound' ? result.numbers.flat().length : result.numbers.length) : 6}
+                      onGenerate={() => { setIsSimulating(true); return handleGenerate(); }}
+                      onComplete={() => setIsSimulating(false)}
+                    />
+                  </div>
+                )}
+
+                {/* Only show results when NOT simulating or simulation is off */}
+                {result && (!showSimulation || !isSimulating) && (
+                  <div className="results">
+                    <div className="balls-container">
+                      {result.type === 'compound' ? (
+                        // Loto 5/35: needs to separate 5 balls and 1 ball
+                        // result.numbers will be [[1,2,3,4,5], [9]]
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                          <div style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center' }}>
+                            {result.numbers[0].map((num, i) => (
+                              <Ball
+                                key={`part1-${i}`}
+                                number={num}
+                                type="matrix"
+                                highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
+                              />
+                            ))}
+                          </div>
+                          <div style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center', borderTop: '1px dashed #ccc', paddingTop: '1rem', width: '100%' }}>
+                            <span style={{ alignSelf: 'center', fontWeight: 'bold', color: '#888' }}>Số cầu vàng: </span>
+                            {result.numbers[1].map((num, i) => (
+                              <Ball
+                                key={`part2-${i}`}
+                                number={num}
+                                type="matrix"
+                                highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        result.numbers.map((num, index) => (
+                          <Ball
+                            key={`${selectedGame}-${index}`}
+                            number={num}
+                            type={getBallType(selectedGame)}
+                            highlight={(historyMatch?.bestMatch?.numbers || historyMatch?.numbers || []).includes(num)}
+                          />
+                        ))
+                      )}
+                    </div>
+                    <div className="result-note">
+                      Bộ số được sinh ngẫu nhiên, không dựa trên kết quả trước
+                    </div>
+                    <div className="actions">
+                      <button className="action-btn" onClick={handleCopy}>Sao chép</button>
+                      <button className="action-btn" onClick={handleSave}>Lưu tạm</button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Backtest Analysis - Show after simulation completes */}
+                {historyMatch && (!showSimulation || !isSimulating) && (
+                  <div style={{ background: '#f0f9ff', color: '#0369a1', padding: '1rem', borderRadius: '8px', marginTop: '1rem', border: '1px solid #bae6fd' }}>
+                    <h4 style={{ marginTop: 0, marginBottom: '0.5rem' }}>📊 Phân tích Lịch sử (Backtest)</h4>
+                    <div>
+                      <strong>
+                        {['max3d', 'max3dpro'].includes(selectedGame) ? "Tỉ lệ xuất hiện:" :
+                          selectedGame === 'loto535' ? "Tỉ lệ trúng (2+ số):" :
+                            `Tỉ lệ trúng (${historyMatch.minMatchesForWin || 3}+ số):`}
+                      </strong>
+                      <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: Number(historyMatch.winRate || 0) > 0 ? '#16a34a' : 'inherit', marginLeft: '0.5rem' }}>
+                        {historyMatch.winRate || 0}%
+                      </span>
+                      <span style={{ fontSize: '0.9rem', color: '#666' }}> ({historyMatch.wins || 0}/{historyMatch.totalDraws || 0} kỳ)</span>
+                    </div>
+
+                    {historyMatch.matchCounts && Object.keys(historyMatch.matchCounts).length > 0 && (
+                      <div style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+                        <strong>Chi tiết trùng khớp:</strong>
+                        <ul style={{ margin: '0.3rem 0', paddingLeft: '1.2rem' }}>
+                          {Object.entries(historyMatch.matchCounts)
+                            .sort((a, b) => b[0] - a[0])
+                            .map(([matches, count]) => (
+                              <li key={matches}>
+                                {['max3d', 'max3dpro'].includes(selectedGame) ?
+                                  `Xuất hiện ${matches} số:` :
+                                  `Trùng ${matches} số:`} {count} lần
+                              </li>
+                            ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {(historyMatch.bestMatch || (historyMatch.drawDate ? historyMatch : null)) && (
+                      <div style={{ marginTop: '0.5rem', fontSize: '0.9rem', borderTop: '1px dashed #bae6fd', paddingTop: '0.5rem' }}>
+                        <strong>Kỳ trùng nhiều nhất:</strong> Ngày {(historyMatch.bestMatch || historyMatch).drawDate} <span style={{ color: '#555', fontStyle: 'italic' }}>[{(historyMatch.bestMatch || historyMatch).numbers.join(', ')}]</span>
+                        (Matches: {(historyMatch.bestMatch || historyMatch).matches})
+                      </div>
+                    )}
+                  </div>
+                )}
+              </section>
+
+              {/* Saved Items Section */}
+              {savedItems.length > 0 && (
+                <section className="saved-items" style={{ background: 'white', padding: '1rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+                  <h3 style={{ marginTop: 0, fontSize: '1.1rem', color: '#555' }}>Bộ số đã lưu (Gần nhất)</h3>
+                  <ul style={{ listStyle: 'none', padding: 0 }}>
+                    {savedItems.map(item => {
+                      const gameInfo = games.find(g => g.id === item.game);
+                      const displayName = gameInfo ? gameInfo.name : item.game;
+
+                      return (
+                        <li key={item.id} style={{ borderBottom: '1px solid #eee', padding: '0.5rem 0', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
+                          <span style={{ fontWeight: 'bold', color: 'var(--primary-red)', minWidth: '80px' }}>{displayName}</span>
+                          <span style={{ flex: 1 }}>
+                            {item.type === 'compound' ? (
+                              `${item.numbers[0].join(', ')} | ${item.numbers[1]}`
+                            ) : (
+                              item.numbers.join(', ')
+                            )}
+                          </span>
+                          <button
+                            onClick={() => handleDelete(item.id)}
+                            style={{
+                              background: 'transparent',
+                              border: 'none',
+                              color: '#dc2626',
+                              cursor: 'pointer',
+                              padding: '4px 8px',
+                              fontSize: '1rem',
+                              borderRadius: '4px',
+                              transition: 'background 0.2s'
+                            }}
+                            onMouseOver={(e) => e.target.style.background = '#fee2e2'}
+                            onMouseOut={(e) => e.target.style.background = 'transparent'}
+                            title="Xóa bộ số này"
+                          >
+                            🗑️
+                          </button>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              )}
+            </>
           )}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
